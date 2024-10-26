@@ -10,36 +10,38 @@ import {
 
 const NavBar = () => {
   return (
-    <nav className="fixed top-0 w-full bg-gray-200 shadow-md z-10">
+    <nav className="fixed top-0 w-full bg-navy text-lightestSlate font-sans font-bold shadow-md z-10">
       <div className="container mx-auto px-4 py-2 flex justify-between items-center">
+        {/* Brand - Hidden on small screens */}
         <Link href="#">
-          <a className="text-xl font-semibold">Gazi Jarin</a>
+          <a className="text-xl hidden md:inline">Gazi Jarin</a>
         </Link>
-        <div className="flex space-x-4">
+
+        {/* Nav Links - Hidden on small screens */}
+        <div className="flex space-x-4 hidden md:flex">
           <Link href="#intro">
-            <a className="text-gray-700 hover:text-gray-900">Home</a>
+            <a className="hover:text-greenBright">Home</a>
           </Link>
           <Link href="#about">
-            <a className="text-gray-700 hover:text-gray-900">About</a>
+            <a className="hover:text-greenBright">About</a>
           </Link>
           <Link href="#experience">
-            <a className="text-gray-700 hover:text-gray-900">Experience</a>
+            <a className="hover:text-greenBright">Experience</a>
           </Link>
           <Link href="#projects">
-            <a className="text-gray-700 hover:text-gray-900">Projects</a>
+            <a className="hover:text-greenBright">Projects</a>
           </Link>
         </div>
+
+        {/* Social Icons */}
         <div className="flex space-x-3 items-center">
           <Link href="mailto:gazijarin@gmail.com">
-            <a aria-label="Email" className="text-gray-700 hover:text-gray-900">
+            <a aria-label="Email" className="hover:text-greenBright">
               <EmailRounded style={{ fontSize: 20 }} />
             </a>
           </Link>
           <Link href="https://github.com/gazijarin" target="_blank">
-            <a
-              aria-label="GitHub"
-              className="text-gray-700 hover:text-gray-900"
-            >
+            <a aria-label="GitHub" className="hover:text-greenBright">
               <GitHub style={{ fontSize: 19 }} />
             </a>
           </Link>
@@ -47,18 +49,12 @@ const NavBar = () => {
             href="https://www.linkedin.com/in/gazi-jarin-3644b0172/"
             target="_blank"
           >
-            <a
-              aria-label="LinkedIn"
-              className="text-gray-700 hover:text-gray-900"
-            >
+            <a aria-label="LinkedIn" className="hover:text-greenBright">
               <LinkedIn style={{ fontSize: 21 }} />
             </a>
           </Link>
           <Link href="https://medium.com/@gazijarin.ai" target="_blank">
-            <a
-              aria-label="Medium"
-              className="text-gray-700 hover:text-gray-900"
-            >
+            <a aria-label="Medium" className="hover:text-greenBright">
               <BorderColor style={{ fontSize: 20 }} />
             </a>
           </Link>

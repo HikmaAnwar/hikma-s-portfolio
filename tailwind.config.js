@@ -8,8 +8,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        colors: {
+          navy: "#0A1A3C", // replace with your navy color value
+          lightestSlate: "#DCD5C7", // replace with your lightest-slate color value
+          greenBright: "#00FF7F", // replace with your green-bright color value
+        },
+        fontFamily: {
+          sans: ["NTR", "sans-serif"],
+        },
+        fontWeight: {
+          bold: "700",
+        },
       },
     },
   },
