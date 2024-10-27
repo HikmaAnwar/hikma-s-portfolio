@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { EmailRounded } from "@mui/icons-material";
 import FadeInSection from "./FadeInSection";
 import FractalTree from "./FractalTree";
+import Link from "next/link";
 
 const Intro = () => {
   const [text, setText] = useState("");
@@ -43,13 +44,14 @@ const Intro = () => {
           large-scale, high-impact products and have contributed to major
           feature launches in industry-leading services and apps.
         </p>
-        <a
+
+        <Link
           href="mailto:hikmaanwar89@gmail.com"
-          className="mt-6 flex items-center  border border-colors-greenBright px-6 py-2 rounded-lg text-lg font-bold hover:bg-colors-lightestNavy transition duration-300"
+          className="mt-6 flex items-center justify-center space-x-4  border border-colors-greenBright px-6 py-2 rounded-lg text-lg font-bold hover:bg-colors-lightestNavy transition duration-300"
         >
           <EmailRounded fontSize="small" />
           <span>Say hi!</span>
-        </a>
+        </Link>
       </FadeInSection>
     </div>
   );
