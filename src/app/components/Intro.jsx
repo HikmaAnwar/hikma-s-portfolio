@@ -39,13 +39,12 @@ const Intro = () => {
           I create stuff sometimes.
         </div>
         <p className="mt-4 text-slate text-lg md:text-xl max-w-lg">
-          I'm a software engineer from Toronto, Canada. I'm fascinated by
+          I'm a software engineer from Addis Ababa, Ethiopia. I'm fascinated by
           large-scale, high-impact products and have contributed to major
-          feature launches in industry-leading services and apps with 100M+
-          installs.
+          feature launches in industry-leading services and apps.
         </p>
         <a
-          href="mailto:gazijarin@gmail.com"
+          href="mailto:hikmaanwar89@gmail.com"
           className="mt-6 flex items-center space-x-2 border border-greenBright px-6 py-2 rounded-md text-lg font-bold hover:bg-lightestNavy transition duration-300"
         >
           <EmailRounded fontSize="small" />
