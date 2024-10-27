@@ -22,7 +22,7 @@ const Intro = () => {
     <div className="relative flex flex-col items-center text-center mx-auto max-w-5xl min-h-screen pt-32 mt-60 px-4">
       <FractalTree />
 
-      <h1 className="text-colors-lightestSlate text-5xl md:text-7xl lg:text-8xl pt-32 font-bold font-sans">
+      <h1 className="text-white  text-3xl md:text-2xl lg:text-7xl pt-32 font-bold font-sans">
         {text.split(" ").map((word, idx) => (
           <span key={idx}>
             {word === "Hikma" ? (
@@ -35,17 +35,17 @@ const Intro = () => {
       </h1>
 
       <FadeInSection delay="0.5s">
-        <div className="mt-4 text-slate text-2xl md:text-4xl font-light">
+        <div className="mt-4 text-colors-slate text-6xl md:text-4xl font-light">
           I create stuff sometimes.
         </div>
-        <p className="mt-4 text-slate text-lg md:text-xl max-w-lg">
+        <p className="mt-4 text-colors-slate text-lg md:text-xl max-w-xl ">
           I'm a software engineer from Addis Ababa, Ethiopia. I'm fascinated by
           large-scale, high-impact products and have contributed to major
           feature launches in industry-leading services and apps.
         </p>
         <a
           href="mailto:hikmaanwar89@gmail.com"
-          className="mt-6 flex items-center space-x-2 border border-greenBright px-6 py-2 rounded-md text-lg font-bold hover:bg-lightestNavy transition duration-300"
+          className="mt-6 flex items-center  border border-colors-greenBright px-6 py-2 rounded-lg text-lg font-bold hover:bg-colors-lightestNavy transition duration-300"
         >
           <EmailRounded fontSize="small" />
           <span>Say hi!</span>
