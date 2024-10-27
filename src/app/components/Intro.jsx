@@ -1,23 +1,38 @@
-// components/Intro.js
-import React from "react";
-import Typist from "react-typist";
-import "react-typist/dist/Typist.css";
+"use client";
+import React, { useEffect, useState } from "react";
 import { EmailRounded } from "@mui/icons-material";
 import FadeInSection from "./FadeInSection";
 import FractalTree from "./FractalTree";
 
 const Intro = () => {
+  const [text, setText] = useState("");
+  const fullText = "hi, Hikma here."; // Text to be typed out
+
+  useEffect(() => {
+    let index = 0;
+    const intervalId = setInterval(() => {
+      setText(fullText.slice(0, index + 1));
+      index++;
+      if (index === fullText.length) clearInterval(intervalId); // Stop when text is fully typed
+    }, 120); // Typing speed in milliseconds
+    return () => clearInterval(intervalId); // Cleanup on component unmount
+  }, [fullText]);
+
   return (
-    <div className="relative flex flex-col items-center text-center mx-auto max-w-5xl min-h-screen py-20 px-4">
+    <div className="relative flex flex-col items-center text-center mx-auto max-w-5xl min-h-screen pt-32 mt-60 px-4">
       <FractalTree />
 
-      <Typist avgTypingDelay={120}>
-        <span className="text-lightestSlate text-5xl md:text-7xl lg:text-8xl font-bold font-sans">
-          {"hi, "}
-          <span className="text-greenBright">{"gazi"}</span>
-          {" here."}
-        </span>
-      </Typist>
+      <h1 className="text-colors-lightestSlate text-5xl md:text-7xl lg:text-8xl pt-32 font-bold font-sans">
+        {text.split(" ").map((word, idx) => (
+          <span key={idx}>
+            {word === "Hikma" ? (
+              <span className="text-colors-greenBright">{word}</span>
+            ) : (
+              word
+            )}{" "}
+          </span>
+        ))}
+      </h1>
 
       <FadeInSection delay="0.5s">
         <div className="mt-4 text-slate text-2xl md:text-4xl font-light">
