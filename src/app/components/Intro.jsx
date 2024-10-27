@@ -20,20 +20,24 @@ const Intro = () => {
   }, [fullText]);
 
   return (
-    <div className="relative flex flex-col items-center text-center mx-auto max-w-5xl min-h-screen pt-32 mt-60 px-4">
-      <FractalTree />
-
-      <h1 className="text-white  text-3xl md:text-2xl lg:text-7xl pt-32 font-bold font-sans">
-        {text.split(" ").map((word, idx) => (
-          <span key={idx}>
-            {word === "Hikma" ? (
-              <span className="text-colors-greenBright">{word}</span>
-            ) : (
-              word
-            )}{" "}
-          </span>
-        ))}
-      </h1>
+    <div className="relative flex flex-col items-center text-center inset-1 z-0 mx-auto max-w-5xl min-h-screen pt-32 mt-56 pb-36 px-4">
+      <div className="pt-32 mt-50">
+        <FractalTree />
+      </div>
+      <div className="pt-34">
+        {" "}
+        <h1 className="text-white  text-3xl md:text-2xl lg:text-7xl pt-32 font-bold font-sans">
+          {text.split(" ").map((word, idx) => (
+            <span key={idx}>
+              {word === "Hikma" ? (
+                <span className="text-colors-greenBright">{word}</span>
+              ) : (
+                word
+              )}{" "}
+            </span>
+          ))}
+        </h1>
+      </div>
 
       <FadeInSection delay="0.5s">
         <div className="mt-4 text-colors-slate text-6xl md:text-4xl font-light">
