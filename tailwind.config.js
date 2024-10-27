@@ -11,7 +11,7 @@ module.exports = {
         colors: {
           navy: "#0A1A3C", // replace with your navy color value
           lightestSlate: "#DCD5C7", // replace with your lightest-slate color value
-          greenBright: "#00FF7F", // replace with your green-bright color value
+          greenBright: "#00ffe1", // replace with your green-bright color value
         },
         fontFamily: {
           sans: ["NTR", "sans-serif"],
