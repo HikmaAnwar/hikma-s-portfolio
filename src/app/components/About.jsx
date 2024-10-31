@@ -80,8 +80,8 @@ const About = () => {
 
           <div className="about-image mt-8 md:mt-0 md:ml-12">
             <Image
-              alt="Gazi Jarin"
-              src="/assets/me2.jpg"
+              alt="Hikma Anwar"
+              src="/assets/me.jpg"
               width={250}
               height={250}
               className="rounded-lg shadow-lg"
