@@ -1,5 +1,5 @@
+"use client";
 import React, { useState } from "react";
-import "../styles/Projects.css";
 import FolderOpenRoundedIcon from "@material-ui/icons/FolderOpenRounded";
 import FadeInSection from "./FadeInSection";
 import Carousel from "react-bootstrap/Carousel";
@@ -53,35 +53,44 @@ const projects = {
     link: "https://github.com/gazijarin/adamai",
     open: "https://gazijarin.github.io/AdamAI/",
   },
-  // Add more projects as needed
 };
 
 const Projects = () => {
-  const [activeKey, setActiveKey] = useState("1");
+  const [activeKey, setActiveKey] = useState(0);
 
   const handleSelect = (eventKey) => {
     setActiveKey(eventKey);
   };
 
   return (
-    <div id="projects">
-      <div className="section-header">
-        <span className="section-title">/ pet projects</span>
+    <div id="projects" className="max-w-screen-lg mx-auto pt-24 min-h-[50vh]">
+      <div className="text-center mb-8">
+        <span className="text-lg font-semibold text-green-400">
+          / pet projects
+        </span>
       </div>
 
-      <Carousel activeIndex={activeKey} onSelect={handleSelect}>
+      <Carousel
+        activeIndex={activeKey}
+        onSelect={handleSelect}
+        className="max-w-screen-lg mx-auto pb-12"
+      >
         {Object.keys(spotlightProjects).map((key) => (
-          <Carousel.Item key={key}>
+          <Carousel.Item key={key} className="rounded-2xl shadow-lg">
             <img
-              className="d-block w-100"
+              className="w-full h-[500px] object-contain opacity-50"
               src={spotlightProjects[key].image}
               alt={key}
             />
-            <div className="caption-bg">
-              <Carousel.Caption>
-                <h3>{spotlightProjects[key].title}</h3>
-                <p>{spotlightProjects[key].desc}</p>
-                <p className="techStack">{spotlightProjects[key].techStack}</p>
+            <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-2xl">
+              <Carousel.Caption className="text-center text-gray-200">
+                <h3 className="text-3xl font-bold">
+                  {spotlightProjects[key].title}
+                </h3>
+                <p className="text-lg">{spotlightProjects[key].desc}</p>
+                <p className="text-sm font-semibold text-green-400">
+                  {spotlightProjects[key].techStack}
+                </p>
                 <ExternalLinks
                   githubLink={spotlightProjects[key].link}
                   openLink={spotlightProjects[key].open}
@@ -92,27 +101,25 @@ const Projects = () => {
         ))}
       </Carousel>
 
-      <div className="project-container">
-        <ul className="projects-grid">
-          {Object.keys(projects).map((key, i) => (
-            <FadeInSection delay={`${i + 1}00ms`} key={key}>
-              <li className="projects-card">
-                <div className="card-header">
-                  <div className="folder-icon">
-                    <FolderOpenRoundedIcon style={{ fontSize: 35 }} />
-                  </div>
-                  <ExternalLinks
-                    githubLink={projects[key].link}
-                    openLink={projects[key].open}
-                  />
-                </div>
-                <div className="card-title">{key}</div>
-                <div className="card-desc">{projects[key].desc}</div>
-                <div className="card-tech">{projects[key].techStack}</div>
-              </li>
-            </FadeInSection>
-          ))}
-        </ul>
+      <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+        {Object.keys(projects).map((key, i) => (
+          <FadeInSection delay={`${i + 1}00ms`} key={key}>
+            <div className="p-6 bg-gray-800 rounded-lg hover:shadow-md transition-transform transform hover:-translate-y-2">
+              <div className="flex items-center justify-between mb-4 text-green-400">
+                <FolderOpenRoundedIcon style={{ fontSize: 35 }} />
+                <ExternalLinks
+                  githubLink={projects[key].link}
+                  openLink={projects[key].open}
+                />
+              </div>
+              <h4 className="text-xl font-semibold text-white mb-2">{key}</h4>
+              <p className="text-gray-400 mb-4">{projects[key].desc}</p>
+              <p className="text-sm text-green-400 font-medium">
+                {projects[key].techStack}
+              </p>
+            </div>
+          </FadeInSection>
+        ))}
       </div>
     </div>
   );
