@@ -8,13 +8,13 @@ const About = () => {
   const [activeKey, setActiveKey] = useState("1");
 
   const one = (
-    <p>
+    <p className=" text-colors-slate line-height">
       I am currently a <b>Software Development Engineer</b> at
       <a
         href="https://www.aboutamazon.com/"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-blue-500 hover:underline"
+        className=" text-colors-slate hover:underline"
       >
         {" "}
         Amazon
@@ -26,7 +26,7 @@ const About = () => {
         href="https://www.ox.ac.uk/about"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-blue-500 hover:underline"
+        className=" text-colors-slate hover:underline"
       >
         University of Oxford
       </a>
@@ -35,7 +35,7 @@ const About = () => {
   );
 
   const two = (
-    <p>
+    <p className=" text-colors-slate line-height">
       Outside of work, I'm interested in following the developments of science.
       I also play a lot of video games. And make TikToks.
     </p>
@@ -63,7 +63,7 @@ const About = () => {
           <div className="about-description md:w-2/3 space-y-4 text-lightestSlate">
             <div>{one}</div>
 
-            <p className="mt-4">
+            <p className="mt-4  text-colors-slate">
               Here are some technologies I have been working with:
             </p>
 

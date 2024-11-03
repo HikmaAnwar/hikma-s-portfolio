@@ -1,6 +1,7 @@
 import Intro from "./components/Intro";
 import NavBar from "./components/NavBar";
 import About from "./components/About";
+import Experience from "./components/Experience";
 
 export default function Home() {
   return (
@@ -9,9 +10,10 @@ export default function Home() {
       <NavBar />
 
       {/* Page content with spacing between sections */}
-      <div className="flex flex-col items-center space-y-16 w-full max-w-screen-lg">
+      <div className="flex flex-col items-center space-y-2 w-full max-w-screen-lg">
         <Intro />
         <About />
+        <Experience />
       </div>
     </div>
   );
