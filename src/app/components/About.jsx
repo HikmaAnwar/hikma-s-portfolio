@@ -54,7 +54,7 @@ const About = () => {
     <section id="about" className="py-16">
       <FadeInSection>
         <div className="text-center mb-8">
-          <h2 className="text-2xl font-semibold text-lightestSlate">
+          <h2 className="text-2xl font-semibold text-colors-slate text-lightestSlate">
             / about me
           </h2>
         </div>
