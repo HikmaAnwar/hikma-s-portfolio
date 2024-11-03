@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import FolderOpenRoundedIcon from "@mui/icons-material/FolderOpenRounded";
-
+import Image from "next/image";
 import FadeInSection from "./FadeInSection";
 import Carousel from "react-bootstrap/Carousel";
 import ExternalLinks from "./ExternalLinks";
@@ -23,27 +23,10 @@ const spotlightProjects = {
     open: "https://boptii-fitss.vercel.app/",
     image: "/assets/boptifits.jpg",
   },
-
-  "Tall Tales": {
-    title: "tall tales",
-    desc: "A multiplayer storytelling web game allowing concurrent gameplay via sockets.",
-    techStack: "NODE.JS (SOCKET.IO), REACT.JS, MONGODB",
-    link: "https://github.com/gazijarin/TallTales",
-    open: "https://talltales.herokuapp.com/",
-    image: "/assets/talltales.png",
-  },
-  Portfolio: {
-    title: "portfolio.js",
-    desc: "A small JS library for clear and succinct data presentation.",
-    techStack: "NODE.JS (EXPRESS.JS)",
-    link: "https://github.com/gazijarin/Portfolio.js",
-    open: "https://afternoon-ocean-92382.herokuapp.com/",
-    image: "/assets/portfolio.png",
-  },
 };
 
 const projects = {
-  "TDSB Homework Management Interface": {
+  Netview: {
     desc: "An application for Toronto District School Board with a Flask backend and Vue frontend.",
     techStack: "Python (Flask), Vue.js, Bootstrap, SQL",
     link: "https://github.com/gazijarin/TDSBHomeworkManagement",
@@ -79,10 +62,12 @@ const Projects = () => {
       >
         {Object.keys(spotlightProjects).map((key) => (
           <Carousel.Item key={key} className="rounded-2xl shadow-lg">
-            <img
-              className="w-full h-[500px] object-contain opacity-50"
+            <Image
+              className="  object-contain opacity-90"
               src={spotlightProjects[key].image}
               alt={key}
+              width={1000}
+              height={1000}
             />
             <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-2xl">
               <Carousel.Caption className="text-center text-colors-slate">
