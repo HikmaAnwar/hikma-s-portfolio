@@ -55,14 +55,16 @@ const JobList = () => {
   };
 
   return (
-    <div className="flex flex-col sm:flex-row rounded-lg shadow-lg p-6">
+    <div className="flex flex-col sm:flex-row p-6">
       <div className="sm:w-1/4 border-r border-gray-600 pr-4">
         {Object.keys(experienceItems).map((key, i) => (
           <button
             key={i}
             onClick={() => handleChange(i)}
             className={`block py-2 text-left w-full transition-all ${
-              value === i ? "text-blue-400 font-semibold" : "text-gray-400"
+              value === i
+                ? "text-colors-greenBright font-semibold"
+                : "text-colors-slate"
             }`}
           >
             {key}
