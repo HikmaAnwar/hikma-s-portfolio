@@ -34,9 +34,10 @@ const About = () => {
   );
 
   const tech_stack = [
+    "Javascript ES6+",
     "React.js",
     "Next.js",
-    "Javascript ES6+",
+
     "Typescript",
     "Tailwind CSS",
     "Mantine",
