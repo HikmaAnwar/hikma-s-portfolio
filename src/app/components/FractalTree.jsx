@@ -5,7 +5,7 @@ const Sketch = (p5) => {
   let angle;
 
   p5.setup = () => {
-    p5.createCanvas(400, 400, "transparent");
+    p5.createCanvas(400, 360, "transparent");
     angle = p5.PI / 4;
     p5.stroke(255);
   };
