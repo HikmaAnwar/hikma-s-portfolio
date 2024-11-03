@@ -65,8 +65,8 @@ const Projects = () => {
 
   return (
     <div id="projects" className="max-w-screen-lg mx-auto pt-24 min-h-[50vh]">
-      <div className="text-center mb-8">
-        <span className="text-lg font-semibold text-green-400">
+      <div className="section-header mb-8">
+        <span className="section-title text-3xl font-semibold text-colors-slate">
           / pet projects
         </span>
       </div>
