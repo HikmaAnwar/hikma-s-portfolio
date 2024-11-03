@@ -15,12 +15,12 @@ const About = () => {
         href="http://www.aastu.edu.et/"
         target="_blank"
         rel="noopener noreferrer"
-        className=" text-colors-slate hover:underline"
+        className=" text-colors-slate font-semibold hover:underline"
       >
         {" "}
         Addis Ababa Science and Technology University
       </a>
-      With my background in frontend web development, I brings a blend of
+      {""} with my background in frontend web development, I brings a blend of
       technical skills and creativity to my projects. I am passionate about web
       development and I am always looking for new opportunities to learn and
       grow.
