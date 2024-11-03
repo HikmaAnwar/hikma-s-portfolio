@@ -20,9 +20,9 @@ const About = () => {
         {" "}
         Addis Ababa Science and Technology University
       </a>
-      {""} with my background in frontend web development, I brings a blend of
-      technical skills and creativity to my projects. I am passionate about web
-      development and I am always looking for new opportunities to learn and
+      {""} and with my background in frontend web development, I brings a blend
+      of technical skills and creativity to my projects. I am passionate about
+      web development and I am always looking for new opportunities to learn and
       grow.
     </p>
   );

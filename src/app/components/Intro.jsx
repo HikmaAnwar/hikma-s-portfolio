@@ -26,7 +26,7 @@ const Intro = () => {
       </div>
       <div>
         {" "}
-        <h1 className="text-white  text-3xl md:text-2xl lg:text-7xl font-bold font-sans">
+        <h1 className="text-colors-slate  text-3xl md:text-2xl lg:text-7xl font-bold font-sans">
           {text.split(" ").map((word, idx) => (
             <span key={idx}>
               {word === "hikma" ? (
