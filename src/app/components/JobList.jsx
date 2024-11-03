@@ -55,7 +55,7 @@ const JobList = () => {
   };
 
   return (
-    <div className="flex flex-col sm:flex-row bg-gray-800 rounded-lg shadow-lg p-6">
+    <div className="flex flex-col sm:flex-row rounded-lg shadow-lg p-6">
       <div className="sm:w-1/4 border-r border-gray-600 pr-4">
         {Object.keys(experienceItems).map((key, i) => (
           <button
