@@ -7,22 +7,23 @@ import Carousel from "react-bootstrap/Carousel";
 import ExternalLinks from "./ExternalLinks";
 
 const spotlightProjects = {
+  Skillwave: {
+    title: "skillwave",
+    desc: "Skillwave is an educational platform that gives a courses like programming, Video editing and other design related courses based on institutions mainly for university students.",
+    techStack: "Next.js, Tailwind CSS",
+    link: "https://github.com/gazijarin/truth",
+    open: "https://skillwave-frontend.vercel.app/",
+    image: "/assets/skillwave.jpg",
+  },
   "Bopti fits": {
     title: "Bopti fits",
     desc: "Bopti Fits is a virtual wardrobe styling platform designed to offer personalized fashion recommendations and outfit planning services.",
     techStack: "Next.js, Tailwind CSS",
-    link: "https://github.com/slakh96/no-mans-land",
+    link: "https://github.com/HikmaAnwar/boptii-fitss",
     open: "https://boptii-fitss.vercel.app/",
     image: "/assets/boptifits.jpg",
   },
-  Truth: {
-    title: "truth",
-    desc: "A three.js simulation of the planet system revolving around a monolith.",
-    techStack: "JAVASCRIPT (THREE.JS)",
-    link: "https://github.com/gazijarin/truth",
-    open: "https://gazijarin.github.io/Truth/",
-    image: "/assets/truth.png",
-  },
+
   "Tall Tales": {
     title: "tall tales",
     desc: "A multiplayer storytelling web game allowing concurrent gameplay via sockets.",
