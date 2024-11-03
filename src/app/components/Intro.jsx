@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const Intro = () => {
   const [text, setText] = useState("");
-  const fullText = "hi, Hikma here."; // Text to be typed out
+  const fullText = "hi, hikma here."; // Text to be typed out
 
   useEffect(() => {
     let index = 0;
@@ -29,7 +29,7 @@ const Intro = () => {
         <h1 className="text-white  text-3xl md:text-2xl lg:text-7xl font-bold font-sans">
           {text.split(" ").map((word, idx) => (
             <span key={idx}>
-              {word === "Hikma" ? (
+              {word === "hikma" ? (
                 <span className="text-colors-greenBright">{word}</span>
               ) : (
                 word
