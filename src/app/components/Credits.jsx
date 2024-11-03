@@ -15,7 +15,7 @@ const Credits = () => {
           className="text-center w-full pb-10 text-slate-600 text-base" // equivalent to width: 100%, padding-bottom: 40px, color: var(--slate), and font-size: 16px;
           style={{ fontFamily: '"NTR", sans-serif' }} // custom font family applied via inline style
         >
-          <div>Built and designed by Gazi Jarin.</div>
+          <div>Built and designed by Hikma Anwar.</div>
           <div>All rights reserved. ©</div>
         </div>
       </div>

@@ -1,4 +1,3 @@
-// components/FractalTree.js
 import React from "react";
 import { ReactP5Wrapper } from "react-p5-wrapper";
 
@@ -35,7 +34,7 @@ const Sketch = (p5) => {
 };
 
 const FractalTree = () => (
-  <div id="fractal-tree" className="absolute inset-0 w-full h-full z-0">
+  <div className="inset-0 w-full z-0">
     <ReactP5Wrapper sketch={Sketch} />
   </div>
 );

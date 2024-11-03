@@ -20,13 +20,13 @@ const Intro = () => {
   }, [fullText]);
 
   return (
-    <div className="relative flex flex-col items-center text-center inset-1 z-0 mx-auto max-w-5xl min-h-screen pt-32 mt-56 pb-36 px-4">
-      <div className="pt-32 mt-50">
+    <div className="relative flex flex-col items-center text-center inset-1 z-0 mx-auto max-w-5xl px-4">
+      <div>
         <FractalTree />
       </div>
-      <div className="pt-34">
+      <div>
         {" "}
-        <h1 className="text-white  text-3xl md:text-2xl lg:text-7xl pt-32 font-bold font-sans">
+        <h1 className="text-white  text-3xl md:text-2xl lg:text-7xl font-bold font-sans">
           {text.split(" ").map((word, idx) => (
             <span key={idx}>
               {word === "Hikma" ? (
