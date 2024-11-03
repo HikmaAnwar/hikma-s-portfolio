@@ -9,45 +9,37 @@ const About = () => {
 
   const one = (
     <p className=" text-colors-slate line-height">
-      I am currently a <b>Software Development Engineer</b> at
+      I am a dedicated <b>Web developer and a Software Engineering student</b>{" "}
+      at
       <a
-        href="https://www.aboutamazon.com/"
+        href="http://www.aastu.edu.et/"
         target="_blank"
         rel="noopener noreferrer"
         className=" text-colors-slate hover:underline"
       >
         {" "}
-        Amazon
-      </a>
-      , working in the AWS sector under team Route 53. At the same time, I am
-      undertaking a full-time <b>Bachelor of Science</b> in{" "}
-      <b>Software Engineering</b> at{" "}
-      <a
-        href="https://www.ox.ac.uk/about"
-        target="_blank"
-        rel="noopener noreferrer"
-        className=" text-colors-slate hover:underline"
-      >
         Addis Ababa Science and Technology University
       </a>
-      .
+      With my background in frontend web development, I brings a blend of
+      technical skills and creativity to my projects. I am passionate about web
+      development and I am always looking for new opportunities to learn and
+      grow.
     </p>
   );
 
   const two = (
     <p className=" text-colors-slate line-height">
       Outside of work, I'm interested in following the developments of science.
-      I also play a lot of video games. And make TikToks.
     </p>
   );
 
   const tech_stack = [
-    "Typescript",
-    "Python",
     "React.js",
-    "Java",
+    "Next.js",
     "Javascript ES6+",
-    "C#",
+    "Typescript",
+    "Tailwind CSS",
+    "Mantine",
   ];
 
   return (
