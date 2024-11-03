@@ -4,6 +4,7 @@ import About from "./components/About";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Credits from "./components/Credits";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <About />
         <Experience />
         <Projects />
+        <Credits />
       </div>
     </div>
   );
