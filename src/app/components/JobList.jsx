@@ -75,7 +75,7 @@ const JobList = () => {
             key={i}
             className={`${value === i ? "block" : "hidden"} transition-opacity`}
           >
-            <span className="block text-lg font-semibold text-blue-300">
+            <span className="block text-lg font-semibold text-colors-slate">
               {experienceItems[key].jobTitle} {key}
             </span>
             <div className="text-sm text-gray-400 mb-4">

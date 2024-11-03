@@ -16,7 +16,7 @@ const Experience = () => {
     <div id="experience" className="py-8">
       <FadeInSection>
         <div className="section-header mb-4">
-          <span className="section-title text-xl font-semibold text-gray-200">
+          <span className="section-title text-xl font-semibold text-colors-slate">
             / experience
           </span>
         </div>
