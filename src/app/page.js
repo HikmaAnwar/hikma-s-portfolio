@@ -3,6 +3,7 @@ import NavBar from "./components/NavBar";
 import About from "./components/About";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Home() {
   return (

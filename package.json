@@ -14,8 +14,10 @@
     "@heroicons/react": "^1.0.6",
     "@mui/icons-material": "^6.1.5",
     "@mui/material": "^6.1.5",
+    "bootstrap": "^5.3.3",
     "next": "15.0.1",
     "react": "19.0.0-rc-69d4b800-20241021",
+    "react-bootstrap": "^2.10.5",
     "react-dom": "19.0.0-rc-69d4b800-20241021",
     "react-p5-wrapper": "^4.1.2",
     "react-typist": "^2.0.5"

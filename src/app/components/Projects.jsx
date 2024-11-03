@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import FolderOpenRoundedIcon from "@material-ui/icons/FolderOpenRounded";
+import FolderOpenRoundedIcon from "@mui/icons-material/FolderOpenRounded";
+
 import FadeInSection from "./FadeInSection";
 import Carousel from "react-bootstrap/Carousel";
 import ExternalLinks from "./ExternalLinks";
