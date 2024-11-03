@@ -49,13 +49,13 @@ const Intro = () => {
           feature launches in industry-leading services and apps.
         </p>
 
-        <Link
+        <button
           href="mailto:hikmaanwar89@gmail.com"
           className="mt-6 flex items-center justify-center space-x-4  border border-colors-greenBright px-6 py-2 rounded-lg text-lg font-bold hover:bg-colors-lightestNavy transition duration-300"
         >
           <EmailRounded fontSize="small" />
           <span>Say hi!</span>
-        </Link>
+        </button>
       </FadeInSection>
     </div>
   );
