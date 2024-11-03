@@ -53,8 +53,8 @@ const About = () => {
   return (
     <section id="about" className="py-16">
       <FadeInSection>
-        <div className="text-center mb-8">
-          <h2 className="text-2xl font-semibold text-colors-slate text-lightestSlate">
+        <div className="section-header mb-8">
+          <h2 className="section-title text-3xl font-semibold text-colors-slate">
             / about me
           </h2>
         </div>
