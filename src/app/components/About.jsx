@@ -20,7 +20,7 @@ const About = () => {
         Amazon
       </a>
       , working in the AWS sector under team Route 53. At the same time, I am
-      undertaking a part-time <b>Master's of Science</b> in{" "}
+      undertaking a full-time <b>Bachelor of Science</b> in{" "}
       <b>Software Engineering</b> at{" "}
       <a
         href="https://www.ox.ac.uk/about"
@@ -28,7 +28,7 @@ const About = () => {
         rel="noopener noreferrer"
         className=" text-colors-slate hover:underline"
       >
-        University of Oxford
+        Addis Ababa Science and Technology University
       </a>
       .
     </p>
@@ -60,7 +60,7 @@ const About = () => {
         </div>
 
         <div className="flex flex-col md:flex-row items-center md:items-start">
-          <div className="about-description md:w-2/3 space-y-4 text-lightestSlate">
+          <div className="about-description md:w-2/3 space-y-4 text-colors-slate">
             <div>{one}</div>
 
             <p className="mt-4  text-colors-slate">
