@@ -7,13 +7,13 @@ import Carousel from "react-bootstrap/Carousel";
 import ExternalLinks from "./ExternalLinks";
 
 const spotlightProjects = {
-  "No Man's Land": {
-    title: "no man's land",
-    desc: "A third-person survival-mode game where you battle against time and space to return to Earth.",
-    techStack: "C# (UNITY)",
+  "Bopti fits": {
+    title: "Bopti fits",
+    desc: "Bopti Fits is a virtual wardrobe styling platform designed to offer personalized fashion recommendations and outfit planning services.",
+    techStack: "Next.js, Tailwind CSS",
     link: "https://github.com/slakh96/no-mans-land",
-    open: "https://gazijarin.itch.io/no-mans-land",
-    image: "/assets/nomansland.png",
+    open: "https://boptii-fitss.vercel.app/",
+    image: "/assets/boptifits.jpg",
   },
   Truth: {
     title: "truth",
@@ -84,12 +84,12 @@ const Projects = () => {
               alt={key}
             />
             <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-2xl">
-              <Carousel.Caption className="text-center text-gray-200">
+              <Carousel.Caption className="text-center text-colors-slate">
                 <h3 className="text-3xl font-bold">
                   {spotlightProjects[key].title}
                 </h3>
                 <p className="text-lg">{spotlightProjects[key].desc}</p>
-                <p className="text-sm font-semibold text-green-400">
+                <p className="text-sm font-bold text-colors-greenBright">
                   {spotlightProjects[key].techStack}
                 </p>
                 <ExternalLinks
@@ -106,16 +106,18 @@ const Projects = () => {
         {Object.keys(projects).map((key, i) => (
           <FadeInSection delay={`${i + 1}00ms`} key={key}>
             <div className="p-6 bg-gray-800 rounded-lg hover:shadow-md transition-transform transform hover:-translate-y-2">
-              <div className="flex items-center justify-between mb-4 text-green-400">
+              <div className="flex items-center justify-between mb-4 text-colors-greenBright">
                 <FolderOpenRoundedIcon style={{ fontSize: 35 }} />
                 <ExternalLinks
                   githubLink={projects[key].link}
                   openLink={projects[key].open}
                 />
               </div>
-              <h4 className="text-xl font-semibold text-white mb-2">{key}</h4>
-              <p className="text-gray-400 mb-4">{projects[key].desc}</p>
-              <p className="text-sm text-green-400 font-medium">
+              <h4 className="text-xl font-bold text-colors-slate mb-2">
+                {key}
+              </h4>
+              <p className="text-colors-slate mb-4">{projects[key].desc}</p>
+              <p className="text-sm text-colors-greenBright font-medium">
                 {projects[key].techStack}
               </p>
             </div>
