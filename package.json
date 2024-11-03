@@ -19,6 +19,7 @@
     "react": "19.0.0-rc-69d4b800-20241021",
     "react-bootstrap": "^2.10.5",
     "react-dom": "19.0.0-rc-69d4b800-20241021",
+    "react-icon": "^1.0.0",
     "react-p5-wrapper": "^4.1.2",
     "react-typist": "^2.0.5"
   },
