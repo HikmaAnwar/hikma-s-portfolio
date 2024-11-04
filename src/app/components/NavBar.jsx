@@ -90,7 +90,7 @@ const NavBar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-navy text-colors-lightestSlate px-4 py-2">
+        <div className="md:hidden bg-navy text-colors-slate px-4 py-2">
           <Link
             href="#intro"
             className="block py-2 hover:text-colors-greenBright"
@@ -123,14 +123,14 @@ const NavBar = () => {
           {/* Social Icons for Mobile */}
           <div className="flex space-x-3 mt-3">
             <Link
-              href="mailto:gazijarin@gmail.com"
+              href="mailto:hikmaanwar89@gmail.com"
               aria-label="Email"
               className="hover:text-colors-greenBright"
             >
               <EmailRounded style={{ fontSize: 20 }} />
             </Link>
             <Link
-              href="https://github.com/gazijarin"
+              href="https://github.com/HikmaAnwar"
               target="_blank"
               aria-label="GitHub"
               className="hover:text-colors-greenBright"
@@ -138,7 +138,7 @@ const NavBar = () => {
               <GitHub style={{ fontSize: 19 }} />
             </Link>
             <Link
-              href="https://www.linkedin.com/in/gazi-jarin-3644b0172/"
+              href="https://www.linkedin.com/in/hikma-tsegaye/"
               target="_blank"
               aria-label="LinkedIn"
               className="hover:text-colors-greenBright"
@@ -146,7 +146,7 @@ const NavBar = () => {
               <LinkedIn style={{ fontSize: 21 }} />
             </Link>
             <Link
-              href="https://medium.com/@gazijarin.ai"
+              href="https://medium.com/@hikmaanwar89"
               target="_blank"
               aria-label="Medium"
               className="hover:text-colors-greenBright"
