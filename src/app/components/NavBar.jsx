@@ -18,7 +18,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="fixed top-0 w-full bg-navy text-colors-slate  font-bold text-sm z-10">
+    <nav className="fixed top-0 w-full bg-navy text-colors-slate font-bold text-sm z-10">
       <div className="container mx-auto px-4 py-2 flex justify-between items-center">
         {/* Brand - Visible on all screens */}
         <Link href="#" className="text-lg">
