@@ -44,7 +44,7 @@ const NavBar = () => {
         {/* Social Icons - Visible on all screens */}
         <div className="hidden md:flex space-x-3 items-center">
           <Link
-            href="mailto:gazijarin@gmail.com"
+            href="mailto:hikmaanwar89@gmail.com"
             aria-label="Email"
             className="hover:text-greenBright"
           >
