@@ -40,7 +40,7 @@ const Intro = () => {
       </div>
 
       <FadeInSection delay="0.5s">
-        <div className="mt-4 text-colors-slate text-6xl md:text-4xl font-light">
+        <div className="mt-4 text-colors-slate text-6xl md:text-3xl font-light">
           Design. Build. Improve
         </div>
         <p className="mt-4 text-colors-slate text-lg md:text-xl max-w-xl ">
@@ -51,8 +51,10 @@ const Intro = () => {
         </p>
 
         <button
-          href="mailto:hikmaanwar89@gmail.com"
-          className="mt-6 ml-52  flex items-center justify-center space-x-4  border border-colors-greenBright px-6 py-2 rounded-lg text-lg font-bold hover:bg-colors-lightestNavy transition duration-300"
+          onClick={() =>
+            (window.location.href = "mailto:hikmaanwar89@gmail.com")
+          }
+          className="mt-6 ml-52 flex items-center justify-center space-x-4 border border-colors-greenBright px-6 py-2 rounded-lg text-lg font-bold hover:bg-colors-lightestNavy transition duration-300"
         >
           <EmailRounded fontSize="small" />
           <span className="text-colors-greenBright">Say hi!</span>
