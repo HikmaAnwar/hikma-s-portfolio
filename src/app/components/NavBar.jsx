@@ -51,7 +51,7 @@ const NavBar = () => {
             <EmailRounded style={{ fontSize: 20 }} />
           </Link>
           <Link
-            href="https://github.com/gazijarin"
+            href="https://github.com/HikmaAnwar"
             target="_blank"
             aria-label="GitHub"
             className="hover:text-colors-greenBright"
@@ -59,7 +59,7 @@ const NavBar = () => {
             <GitHub style={{ fontSize: 19 }} />
           </Link>
           <Link
-            href="https://www.linkedin.com/in/gazi-jarin-3644b0172/"
+            href="https://www.linkedin.com/in/hikma-tsegaye/"
             target="_blank"
             aria-label="LinkedIn"
             className="hover:text-colors-greenBright"
