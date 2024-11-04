@@ -1,6 +1,7 @@
 // components/JobList.js
 import React, { useState } from "react";
 import FadeInSection from "./FadeInSection";
+import { FaAmazon } from "react-icons/fa";
 
 const JobList = () => {
   const [value, setValue] = useState(0);
