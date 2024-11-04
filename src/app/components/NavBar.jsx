@@ -67,7 +67,7 @@ const NavBar = () => {
             <LinkedIn style={{ fontSize: 21 }} />
           </Link>
           <Link
-            href="https://medium.com/@gazijarin.ai"
+            href="https://medium.com/@hikmaanwar89"
             target="_blank"
             aria-label="Medium"
             className="hover:text-colors-greenBright"
