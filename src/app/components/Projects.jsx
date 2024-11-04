@@ -27,16 +27,16 @@ const spotlightProjects = {
 
 const projects = {
   Netview: {
-    desc: "An application for Toronto District School Board with a Flask backend and Vue frontend.",
-    techStack: "Python (Flask), Vue.js, Bootstrap, SQL",
-    link: "https://github.com/gazijarin/TDSBHomeworkManagement",
-    open: "https://tdsb-app.herokuapp.com/",
+    desc: "Netview Movie Streaming is a platform that offers a wide range of movies and TV shows.",
+    techStack: "Javascript",
+
+    open: "https://netview-movie-streaming.vercel.app/",
   },
-  "Adam A.I.": {
-    desc: "A self-learning A.I. that learns to traverse complex mazes using the genetic algorithm.",
-    techStack: "Javascript, HTML/CSS",
-    link: "https://github.com/gazijarin/adamai",
-    open: "https://gazijarin.github.io/AdamAI/",
+  "Simple Design": {
+    desc: "A simple design.",
+    techStack: "React",
+    link: "https://github.com/HikmaAnwar/simple-react-design",
+    open: "https://simple-react-design-eight.vercel.app/",
   },
 };
 
