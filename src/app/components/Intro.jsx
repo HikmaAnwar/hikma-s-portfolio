@@ -41,12 +41,13 @@ const Intro = () => {
 
       <FadeInSection delay="0.5s">
         <div className="mt-4 text-colors-slate text-6xl md:text-4xl font-light">
-          I create stuff sometimes.
+          Design. Build. Improve
         </div>
         <p className="mt-4 text-colors-slate text-lg md:text-xl max-w-xl ">
           I'm a software engineer from Addis Ababa, Ethiopia. I'm fascinated by
-          large-scale, high-impact products and have contributed to major
-          feature launches in industry-leading services and apps.
+          large-scale, high-impact products and My passion for technology drives
+          me to continually enhance my expertise. I look forward to contributing
+          to impactful projects and making a difference in the tech industry.
         </p>
 
         <button
