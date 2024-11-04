@@ -45,7 +45,7 @@ const Intro = () => {
         </div>
         <p className="mt-4 text-colors-slate text-lg md:text-xl max-w-xl ">
           I'm a software engineer from Addis Ababa, Ethiopia. I'm fascinated by
-          large-scale, high-impact products and My passion for technology drives
+          large-scale, high-impact products and my passion for technology drives
           me to continually enhance my expertise. I look forward to contributing
           to impactful projects and making a difference in the tech industry.
         </p>
