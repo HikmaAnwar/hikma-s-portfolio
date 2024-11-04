@@ -18,10 +18,10 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="fixed top-0 w-full bg-navy text-lightestSlate font-semibold text-gray-300 text-sm z-10">
-      <div className="container mx-auto px-4 py-2 flex justify-between items-center">
+    <nav className="fixed top-0 w-full bg-navy text-colors-slate  font-bold text-sm z-10">
+      <div className="container mx-auto px-4 py-2 flex justify-start ">
         {/* Brand - Visible on all screens */}
-        <Link href="#" className="text-md">
+        <Link href="#" className="text-lg">
           Hikma Anwar
         </Link>
 
