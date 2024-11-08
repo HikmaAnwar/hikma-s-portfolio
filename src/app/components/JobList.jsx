@@ -10,8 +10,10 @@ const JobList = () => {
       jobTitle: "Web Development Intern @",
       duration: "JUL 2024 - OCT 2024",
       desc: [
-        "Collaborated with cross-functional teams to develop and optimize innovative solutions.",
-        "Developed and maintained a web application named Skillwave, an online learning platform, using Next.js and Tailwind CSS.",
+        "Collaborated with cross-functional teams to develop and optimize innovative solutions for the Skillwave platform.",
+        "Developed and maintained Skillwave, an online learning platform offering programming, video editing, and design courses for university students.",
+        "Utilized Next.js for server-side rendering to improve performance and scalability of the platform.",
+        "Developed and maintained Skillwave, an online learning platform designed to offer programming, video editing, and design courses for university students. Utilized Next.js for server-side rendering and optimized performance, and implemented Tailwind CSS for responsive, scalable, and customizable UI design.",
       ],
     },
     Wattpad: {
