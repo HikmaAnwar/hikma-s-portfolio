@@ -78,10 +78,12 @@ const Projects = () => {
                 <p className="text-sm font-bold text-colors-greenBright">
                   {spotlightProjects[key].techStack}
                 </p>
-                <ExternalLinks
-                  githubLink={spotlightProjects[key].link}
-                  openLink={spotlightProjects[key].open}
-                />
+                <div className="flex justify-center mt-4">
+                  <ExternalLinks
+                    githubLink={spotlightProjects[key].link}
+                    openLink={spotlightProjects[key].open}
+                  />
+                </div>
               </Carousel.Caption>
             </div>
           </Carousel.Item>
