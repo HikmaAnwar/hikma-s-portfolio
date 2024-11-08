@@ -1,18 +1,17 @@
 // components/JobList.js
 import React, { useState } from "react";
 import FadeInSection from "./FadeInSection";
-import { FaAmazon } from "react-icons/fa";
 
 const JobList = () => {
   const [value, setValue] = useState(0);
 
   const experienceItems = {
-    Amazon: {
+    "Dynamic Technologies": {
       jobTitle: "Web Development Intern @",
-      duration: "JUL 2024 - oct 2024",
+      duration: "JUL 2024 - OCT 2024",
       desc: [
-        "Collaborates with cross-functional teams to develop and optimize innovative solutions.",
-        "Develops and maintain web application named Skillwave an online learning platform using Next.js and Tailwind CSS. ",
+        "Collaborated with cross-functional teams to develop and optimize innovative solutions.",
+        "Developed and maintained a web application named Skillwave, an online learning platform, using Next.js and Tailwind CSS.",
       ],
     },
     Wattpad: {
