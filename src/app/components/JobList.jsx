@@ -1,13 +1,17 @@
-import React from "react";
+// components/JobList.js
+import React, { useState } from "react";
+import FadeInSection from "./FadeInSection";
 
-const JobList = ({ activeKey, onSelect }) => {
+const JobList = () => {
+  const [value, setValue] = useState(0);
+
   const experienceItems = {
     "Dynamic Technologies": {
       jobTitle: "Web Development Intern @",
       duration: "JUL 2024 - OCT 2024",
       desc: [
-        "Collaborates with cross-functional teams to develop and optimize innovative solutions.",
-        "Develops and maintains the Skillwave web application, an online learning platform using Next.js and Tailwind CSS.",
+        "Collaborated with cross-functional teams to develop and optimize innovative solutions.",
+        "Developed and maintained a web application named Skillwave, an online learning platform, using Next.js and Tailwind CSS.",
       ],
     },
     Wattpad: {
@@ -16,9 +20,13 @@ const JobList = ({ activeKey, onSelect }) => {
       desc: [
         "Developed a responsive React web page (the new Story Details) from scratch, both on client and server side, for an app with massive scale (2 billion daily requests).",
         "Iteratively built web experiences for 80 million users across high-traffic pages.",
-        "Collaborated with senior engineers and product management following best practices for the full software development lifecycle.",
+        "Collaborated with senior engineers and product management following best practices for the full software development life cycle, including coding standards, code reviews, source control management, build processes, testing, and operations.",
       ],
     },
+  };
+
+  const handleChange = (index) => {
+    setValue(index);
   };
 
   return (
@@ -27,10 +35,10 @@ const JobList = ({ activeKey, onSelect }) => {
         {Object.keys(experienceItems).map((key, i) => (
           <button
             key={i}
-            onClick={() => onSelect(key)}
+            onClick={() => handleChange(i)}
             className={`block py-2 text-left w-full transition-all ${
-              activeKey === key
-                ? "border-b-2 border-colors-greenBright font-semibold"
+              value === i
+                ? "text-colors-greenBright font-semibold"
                 : "text-colors-slate"
             }`}
           >
@@ -42,9 +50,7 @@ const JobList = ({ activeKey, onSelect }) => {
         {Object.keys(experienceItems).map((key, i) => (
           <div
             key={i}
-            className={`${
-              activeKey === key ? "block" : "hidden"
-            } transition-opacity`}
+            className={`${value === i ? "block" : "hidden"} transition-opacity`}
           >
             <span className="block text-lg font-semibold text-colors-slate">
               {experienceItems[key].jobTitle} {key}
@@ -54,9 +60,9 @@ const JobList = ({ activeKey, onSelect }) => {
             </div>
             <ul className="list-disc list-inside text-colors-slate space-y-2">
               {experienceItems[key].desc.map((descItem, idx) => (
-                <li key={idx} className="text-colors-slate">
-                  {descItem}
-                </li>
+                <FadeInSection key={idx} delay={`${idx + 1}00ms`}>
+                  <li className="text-colors-slate">{descItem}</li>
+                </FadeInSection>
               ))}
             </ul>
           </div>
