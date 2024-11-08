@@ -7,14 +7,6 @@ import Carousel from "react-bootstrap/Carousel";
 import ExternalLinks from "./ExternalLinks";
 
 const spotlightProjects = {
-  Skillwave: {
-    title: "skillwave",
-    desc: "Skillwave is an educational platform that gives a courses like programming, Video editing and other design related courses based on institutions mainly for university students.",
-    techStack: "Next.js, Tailwind CSS",
-    link: "https://github.com/gazijarin/truth",
-    open: "https://skillwave-frontend.vercel.app/",
-    image: "/assets/skillwave.jpg",
-  },
   "Bopti fits": {
     title: "Bopti fits",
     desc: "Bopti Fits is a virtual wardrobe styling platform designed to offer personalized fashion recommendations and outfit planning services.",
@@ -22,6 +14,14 @@ const spotlightProjects = {
     link: "https://github.com/HikmaAnwar/boptii-fitss",
     open: "https://boptii-fitss.vercel.app/",
     image: "/assets/boptifits.jpg",
+  },
+  Skillwave: {
+    title: "skillwave",
+    desc: "Skillwave is an educational platform that gives a courses like programming, Video editing and other design related courses based on institutions mainly for university students.",
+    techStack: "Next.js, Tailwind CSS",
+    link: "https://github.com/gazijarin/truth",
+    open: "https://skillwave-frontend.vercel.app/",
+    image: "/assets/skillwave.jpg",
   },
 };
 
