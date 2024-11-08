@@ -13,7 +13,7 @@ const JobList = () => {
         "Collaborated with cross-functional teams to develop and optimize innovative solutions for the Skillwave platform.",
         "Developed and maintained Skillwave, an online learning platform offering programming, video editing, and design courses for university students.",
         "Utilized Next.js for server-side rendering to improve performance and scalability of the platform.",
-        "Developed and maintained Skillwave, an online learning platform designed to offer programming, video editing, and design courses for university students. Utilized Next.js for server-side rendering and optimized performance, and implemented Tailwind CSS for responsive, scalable, and customizable UI design.",
+        "Implemented Tailwind CSS to create a responsive, scalable, and customizable UI, enhancing the overall user experience.",
       ],
     },
     Wattpad: {
