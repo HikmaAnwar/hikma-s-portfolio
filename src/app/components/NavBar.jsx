@@ -22,7 +22,7 @@ const NavBar = () => {
       <div className="container mx-auto px-4 py-2 flex justify-between items-center">
         {/* Brand - Visible on all screens */}
         <Link href="#" className="text-lg">
-          Hikma Anwar Tsegayes
+          Hikma Anwar Tsegaye
         </Link>
 
         {/* Desktop Links - Hidden on small screens */}
