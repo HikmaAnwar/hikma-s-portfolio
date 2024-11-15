@@ -10,7 +10,8 @@ module.exports = {
       colors: {
         colors: {
           navy: "#0A1A3C", // replace with your navy color value
-          dark: "#13284D",
+          dark: "#09122F",
+          meow: "#13284D",
           lightestSlate: "#DCD5C7", // replace with your lightest-slate color value
           greenBright: "#00ffe1",
           slate: "#a8b2d1",
