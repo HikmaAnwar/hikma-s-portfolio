@@ -8,7 +8,7 @@ import {
   LinkedIn,
   BorderColor,
 } from "@mui/icons-material";
-import { MenuIcon, XIcon } from "@heroicons/react/outline"; // For hamburger icon
+import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
