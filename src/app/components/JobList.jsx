@@ -21,7 +21,7 @@ const JobList = () => {
       desc: [
         "Developed a responsive React web page (the new Story Details), both on client and server side, for an app with massive scale (2 billion daily requests).",
         "Iteratively built web experiences for 80 million users across high-traffic pages.",
-        "Collaborated with senior engineers and product management following best practices for the full software development life cycle, including coding standards, code reviews, source control management, build processes, testing, and operations.",
+        "Collaborated with other engineers and product management following best practices for the full software development life cycle, including coding standards, code reviews, source control management, build processes, testing, and operations.",
       ],
     },
   };
