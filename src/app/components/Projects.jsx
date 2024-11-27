@@ -15,7 +15,7 @@ const spotlightProjects = {
     open: "https://boptii-fitss.vercel.app/",
     image: "/assets/boptifits.jpg",
   },
-  "Skillwave": {
+  Skillwave: {
     title: "skillwave",
     desc: "Skillwave is an educational platform that gives a courses like programming, Video editing and other design related courses based on institutions mainly for university students.",
     techStack: "Next.js, Tailwind CSS",
@@ -23,18 +23,18 @@ const spotlightProjects = {
     open: "https://skillwave-frontend.vercel.app/",
     image: "/assets/skillwave.jpg",
   },
-  
- "Netview": {  
-    title: "Netview",   
+
+  Netview: {
+    title: "Netview",
     desc: "Netview Movie Streaming is a platform that offers a wide range of movies and TV shows.",
     techStack: "Javascript",
     link: "https://github.com/HikmaAnwar/netview-movie-streaming",
-    open: "https://netview-movie-streaming.vercel.app/"  ,
+    open: "https://netview-movie-streaming.vercel.app/",
     image: "/assets/netview.jpg",
- },
+  },
 
- "lifekit": {
-    title: "lifekit", 
+  lifekit: {
+    title: "lifekit",
     desc: "Simple and conveys a comprehensive toolkit for managing different aspects of life.",
     techStack: "next.js, mantine, supabase",
     link: "https://github.com/HikmaAnwar/LifeKit",
@@ -54,18 +54,17 @@ const spotlightProjects = {
     title: "Simple Design",
     desc: "A simple design.",
     techStack: "React",
-    link: ,
+
     open: "https://simple-react-design-eight.vercel.app/",
     image: "/assets/simple-design.jpg",
-},
-
-
+  },
+};
 
 const projects = {
   Netview: {
     desc: "Netview Movie Streaming is a platform that offers a wide range of movies and TV shows.",
     techStack: "Javascript",
-
+    link: "https://github.com/HikmaAnwar/netview-movie-streaming",
     open: "https://netview-movie-streaming.vercel.app/",
   },
   "Simple Design": {
@@ -73,7 +72,7 @@ const projects = {
     techStack: "React",
     link: "https://github.com/HikmaAnwar/simple-react-design",
     open: "https://simple-react-design-eight.vercel.app/",
-  },https
+  },
 };
 
 const Projects = () => {
