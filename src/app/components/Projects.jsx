@@ -49,8 +49,9 @@ const spotlightProjects = {
     image: "/assets/lifekit.jpg",
   },
 
-  "minim": {
+  "minim-url": {
     title: "minim",
+    desc: "A simple and efficient link shortener.",
 
 
 const projects = {
