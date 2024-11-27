@@ -35,7 +35,7 @@ const spotlightProjects = {
     title: "Netview",   
     desc: "Netview Movie Streaming is a platform that offers a wide range of movies and TV shows.",
     techStack: "Javascript",
-    link: ""
+    link: "https://github.com/HikmaAnwar/netview-movie-streaming",
     open: "https://netview-movie-streaming.vercel.app/"  ,
     image: "/assets/netview.jpg",
  },
