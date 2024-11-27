@@ -42,8 +42,16 @@ const spotlightProjects = {
 
  "lifekit": {
     title: "lifekit", 
-    
+    desc: "Simple and conveys a comprehensive toolkit for managing different aspects of life.",
+    techStack: "next.js, mantine, supabase",
+    link: "https://github.com/HikmaAnwar/LifeKit",
+    open: "https://lifekit.vercel.app/",
+    image: "/assets/lifekit.jpg",
+  },
 
+  "minim": {
+    title: "minim",
+    
 
 const projects = {
   Netview: {
