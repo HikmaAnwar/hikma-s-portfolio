@@ -23,14 +23,7 @@ const spotlightProjects = {
     open: "https://skillwave-frontend.vercel.app/",
     image: "/assets/skillwave.jpg",
   },
-  "Simple Design": {
-    title: "Simple Design",
-    desc: "A simple design.",
-    techStack: "React",
-    link: ,
-    open: "https://simple-react-design-eight.vercel.app/",
-    image: "/assets/simple-design.jpg",
-},
+  
  "Netview": {  
     title: "Netview",   
     desc: "Netview Movie Streaming is a platform that offers a wide range of movies and TV shows.",
@@ -56,6 +49,15 @@ const spotlightProjects = {
     link: "https://github.com/HikmaAnwar/minim-url",
     open: "https://minim-url.vercel.app",
     image: "/assets/minim.jpg",
+  },
+  "Simple Design": {
+    title: "Simple Design",
+    desc: "A simple design.",
+    techStack: "React",
+    link: ,
+    open: "https://simple-react-design-eight.vercel.app/",
+    image: "/assets/simple-design.jpg",
+},
 
 
 
