@@ -52,6 +52,11 @@ const spotlightProjects = {
   "minim-url": {
     title: "minim",
     desc: "A simple and efficient link shortener.",
+    techStack: "Next.js, typescript",
+    link: "https://github.com/HikmaAnwar/minim-url",
+    open: "https://minim-url.vercel.app",
+    image: "/assets/minim.jpg",
+
 
 
 const projects = {
