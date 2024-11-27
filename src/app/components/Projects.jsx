@@ -15,7 +15,7 @@ const spotlightProjects = {
     open: "https://boptii-fitss.vercel.app/",
     image: "/assets/boptifits.jpg",
   },
-  Skillwave: {
+  "Skillwave": {
     title: "skillwave",
     desc: "Skillwave is an educational platform that gives a courses like programming, Video editing and other design related courses based on institutions mainly for university students.",
     techStack: "Next.js, Tailwind CSS",
@@ -23,7 +23,27 @@ const spotlightProjects = {
     open: "https://skillwave-frontend.vercel.app/",
     image: "/assets/skillwave.jpg",
   },
-};
+  "Simple Design": {
+    title: "Simple Design",
+    desc: "A simple design.",
+    techStack: "React",
+    link: ,
+    open: "https://simple-react-design-eight.vercel.app/",
+    image: "/assets/simple-design.jpg",
+},
+ "Netview": {  
+    title: "Netview",   
+    desc: "Netview Movie Streaming is a platform that offers a wide range of movies and TV shows.",
+    techStack: "Javascript",
+    link: ""
+    open: "https://netview-movie-streaming.vercel.app/"  ,
+    image: "/assets/netview.jpg",
+ },
+
+ "lifekit": {
+    title: "lifekit", 
+    
+
 
 const projects = {
   Netview: {
@@ -37,7 +57,7 @@ const projects = {
     techStack: "React",
     link: "https://github.com/HikmaAnwar/simple-react-design",
     open: "https://simple-react-design-eight.vercel.app/",
-  },
+  },https
 };
 
 const Projects = () => {
