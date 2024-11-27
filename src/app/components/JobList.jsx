@@ -39,7 +39,7 @@ const JobList = () => {
             className={`block py-2 text-left w-full transition-all ${
               value === i
                 ? "text-colors-greenBright font-semibold"
-                : "text-colors-meow"
+                : "text-colors-slate"
             }`}
           >
             {key}
