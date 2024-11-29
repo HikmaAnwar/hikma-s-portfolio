@@ -61,6 +61,12 @@ const spotlightProjects = {
 };
 
 const projects = {
+  lifekit: {
+    desc: "Simple and conveys a comprehensive toolkit for managing different aspects of life.",
+    techStack: "next.js, mantine, supabase",
+    link: "https://github.com/HikmaAnwar/LifeKit",
+    open: "https://life-kit-gamma.vercel.app/",
+  },
   "minim-url": {
     desc: "A simple and efficient link shortener.",
     techStack: "Next.js, typescript",
