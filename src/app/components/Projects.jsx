@@ -61,6 +61,12 @@ const spotlightProjects = {
 };
 
 const projects = {
+  "minim-url": {
+    desc: "A simple and efficient link shortener.",
+    techStack: "Next.js, typescript",
+    link: "https://github.com/HikmaAnwar/minim-url",
+    open: "https://minim-url.vercel.app",
+  },
   Netview: {
     desc: "Netview Movie Streaming is a platform that offers a wide range of movies and TV shows.",
     techStack: "Javascript",
