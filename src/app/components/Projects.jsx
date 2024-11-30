@@ -61,6 +61,13 @@ const spotlightProjects = {
 };
 
 const projects = {
+  "Bopti fits": {
+    title: "Bopti fits",
+    desc: "Bopti Fits is a virtual wardrobe styling platform designed to offer personalized fashion recommendations and outfit planning services.",
+    techStack: "Next.js, Tailwind CSS",
+    link: "https://github.com/HikmaAnwar/boptii-fitss",
+    open: "https://boptii-fitss.vercel.app/",
+    image: "/assets/boptifits.jpg",
   lifekit: {
     desc: "Simple and conveys a comprehensive toolkit for managing different aspects of life.",
     techStack: "next.js, mantine, supabase",
