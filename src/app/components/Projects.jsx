@@ -67,6 +67,14 @@ const projects = {
     link: "https://github.com/HikmaAnwar/boptii-fitss",
     open: "https://boptii-fitss.vercel.app/",
   },
+  Skillwave: {
+    title: "skillwave",
+    desc: "Skillwave is an educational platform that gives a courses like programming, Video editing and other design related courses based on institutions mainly for university students.",
+    techStack: "Next.js, Tailwind CSS",
+    link: "https://github.com/gazijarin/truth",
+    open: "https://skillwave-frontend.vercel.app/",
+    image: "/assets/skillwave.jpg",
+  },
   lifekit: {
     desc: "Simple and conveys a comprehensive toolkit for managing different aspects of life.",
     techStack: "next.js, mantine, supabase",
