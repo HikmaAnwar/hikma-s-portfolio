@@ -15,13 +15,9 @@ const JobList = () => {
         "Implemented Tailwind CSS to create a responsive, scalable, and customizable UI, enhancing the overall user experience.",
       ],
     },
-    Wattpad: {
-      jobTitle: "Associate Engineer @",
-      duration: "MAY 2020 - APR 2021",
-      desc: [
-        "Developed a responsive React web page (the new Story Details), both on client and server side, for an app with massive scale (2 billion daily requests).",
-        "Iteratively built web experiences for 80 million users across high-traffic pages.",
-      ],
+    Freelancer: {
+      jobTitle: "Freelance Web Developer",
+      duration: " Jun 2024 - Present",
     },
   };
 
