@@ -41,6 +41,7 @@ const About = () => {
     "Typescript",
     "Tailwind CSS",
     "Mantine",
+    "Supabase",
   ];
 
   return (
