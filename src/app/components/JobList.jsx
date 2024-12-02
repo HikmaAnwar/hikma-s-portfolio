@@ -18,6 +18,9 @@ const JobList = () => {
     Freelancer: {
       jobTitle: "Freelance Web Developer",
       duration: " Jun 2024 - Present",
+      desc: [
+        "Developed and maintained websites for clients using react, next,js, mantine and typescript.",
+      ],
     },
   };
 
