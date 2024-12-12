@@ -17,10 +17,10 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="fixed top-0 w-full bg-colors-navy text-colors-slate font-bold text-sm z-50 h-10 ">
+    <nav className="fixed top-0 w-full bg-colors-dark text-colors-slate font-bold text-sm z-50 h-10 ">
       <div className="container mx-auto px-4 py-2 flex justify-between items-center">
         <Link href="#" className="text-lg">
-          Hikma Anwar 
+          Hikma Anwar
         </Link>
 
         <div className="hidden md:flex space-x-4">
