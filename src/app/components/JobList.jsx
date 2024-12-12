@@ -7,7 +7,7 @@ const JobList = () => {
   const experienceItems = {
     "Dynamic Technologies": {
       jobTitle: "Web Development Intern @",
-      duration: "JUL 2024 - OCT 2024",
+      duration: "JUL 2024 - present",
       desc: [
         "Collaborated with cross-functional teams to develop and optimize innovative solutions for the Skillwave platform.",
         "Developed and maintained Skillwave, an online learning platform offering programming, video editing, and design courses for university students.",
