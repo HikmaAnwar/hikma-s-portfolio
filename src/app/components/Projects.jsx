@@ -8,7 +8,7 @@ import ExternalLinks from "./ExternalLinks";
 
 const spotlightProjects = {
   "Bopti fits": {
-    title: "Boptii fffits",
+    title: "Boptii fits",
     desc: "Bopti Fits is a virtual wardrobe styling platform designed to offer personalized fashion recommendations and outfit planning services.",
     techStack: "Next.js, Tailwind CSS",
     link: "https://github.com/HikmaAnwar/boptii-fitss",
