@@ -50,14 +50,6 @@ const spotlightProjects = {
     open: "https://minim-url.vercel.app",
     image: "/assets/minim.jpg",
   },
-  "Simple Design": {
-    title: "Simple Design",
-    desc: "A simple design.",
-    techStack: "React",
-
-    open: "https://simple-react-design-eight.vercel.app/",
-    image: "/assets/simple-design.jpg",
-  },
 };
 
 const projects = {
