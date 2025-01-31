@@ -9,8 +9,8 @@ const About = () => {
 
   const one = (
     <p className=" text-colors-slate line-height">
-      I am a dedicated apnd passionate <b>Web developer and a Software Engineering student</b>{" "}
-      at
+      I am a dedicated apnd passionate{" "}
+      <b>Web developer and a Software Engineering student</b> at
       <a
         href="http://www.aastu.edu.et/"
         target="_blank"
@@ -42,6 +42,7 @@ const About = () => {
     "Tailwind CSS",
     "Mantine",
     "Supabase",
+    "Zustand",
   ];
 
   return (
