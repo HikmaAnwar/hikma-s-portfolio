@@ -9,7 +9,7 @@ const About = () => {
 
   const one = (
     <p className=" text-colors-slate line-height">
-      I am a dedicated apnd passionate{" "}
+      I am a dedicated and passionate{" "}
       <b>Web developer and a Software Engineering student</b> at
       <a
         href="http://www.aastu.edu.et/"
@@ -18,9 +18,9 @@ const About = () => {
         className=" text-colors-slate font-semibold hover:underline"
       >
         {" "}
-        Addis Ababa Science and Technology University
+        Addis Ababa Science and Technology University.
       </a>
-      {""} and with my background in frontend web development, I brings a blend
+      {""} and with my background in frontend web development, I bring a blend
       of technical skills and creativity to my projects. I am passionate about
       web development and I am always looking for new opportunities to learn and
       grow.
@@ -29,7 +29,7 @@ const About = () => {
 
   const two = (
     <p className=" text-colors-slate line-height">
-      Outside of work, I'm interested in following the developments of science.
+      Outside of work, I am interested in following the developments of science.
     </p>
   );
 
