@@ -37,7 +37,6 @@ const About = () => {
     "Javascript ES6+",
     "React.js",
     "Next.js",
-
     "Typescript",
     "Tailwind CSS",
     "Mantine",
