@@ -41,7 +41,7 @@ const Sketch = (p5) => {
 
 const FractalTree = () => (
   <div className="inset-0 w-full z-0">
-    <ReactP5Wrapper sketch={Sketch} />
+    {ReactP5Wrapper && <ReactP5Wrapper sketch={Sketch} />}
   </div>
 );
 
