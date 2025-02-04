@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { EmailRounded } from "@mui/icons-material";
 import FadeInSection from "./FadeInSection";
-// import FractalTree from "./FractalTree";
+import FractalTree from "./FractalTree";
 import Link from "next/link";
 
 const Intro = () => {
@@ -21,9 +21,9 @@ const Intro = () => {
 
   return (
     <div className="relative flex flex-col items-center text-center inset-1 z-0 mx-auto max-w-5xl px-4">
-      {/* <div>
+      <div>
         <FractalTree />
-      </div> */}
+      </div>
       <div>
         {" "}
         <h1 className="text-colors-slate  text-3xl md:text-2xl lg:text-7xl font-bold font-sans">
