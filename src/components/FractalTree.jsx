@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 
 const ReactP5Wrapper = dynamic(() => import("react-p5-wrapper"), {
@@ -39,10 +39,20 @@ const Sketch = (p5) => {
   }
 };
 
-const FractalTree = () => (
-  <div className="inset-0 w-full z-0">
-    {ReactP5Wrapper && <ReactP5Wrapper sketch={Sketch} />}
-  </div>
-);
+const FractalTree = () => {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) return null;
+
+  return (
+    <div className="inset-0 w-full z-0">
+      <ReactP5Wrapper sketch={Sketch} />
+    </div>
+  );
+};
 
 export default FractalTree;
