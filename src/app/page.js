@@ -1,3 +1,5 @@
+"use client";
+
 import Intro from "./components/Intro";
 import NavBar from "./components/NavBar";
 import About from "./components/About";
@@ -16,9 +18,9 @@ export default function Home() {
       <div className="flex flex-col items-center space-y-2 w-full max-w-screen-lg">
         <Intro />
         <About />
-        <Experience />
+        {/* <Experience />
         <Projects />
-        <Credits />
+        <Credits /> */}
       </div>
     </div>
   );
