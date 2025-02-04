@@ -1,4 +1,5 @@
 // src/app/components/ExternalLinks.jsx
+"use client";
 import React from "react";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
