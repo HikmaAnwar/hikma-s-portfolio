@@ -51,12 +51,7 @@ const Intro = () => {
           in the tech industry.
         </p>
 
-        <button
-          onClick={}
-            // (window.location.href = "mailto:hikmaanwar89@gmail.com")
-          
-          className="mt-6 ml-52 flex items-center justify-center space-x-4 border border-colors-greenBright px-6 py-2 rounded-lg text-lg font-bold hover:bg-colors-lightestNavy transition duration-300"
-        >
+        <button className="mt-6 ml-52 flex items-center justify-center space-x-4 border border-colors-greenBright px-6 py-2 rounded-lg text-lg font-bold hover:bg-colors-lightestNavy transition duration-300">
           <EmailRounded fontSize="small" />
           <span className="text-colors-greenBright">Say hi!</span>
         </button>
