@@ -3,15 +3,16 @@
 import React, { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 
-const ReactP5Wrapper = dynamic(() => import("react-p5-wrapper"), {
-  ssr: false,
-});
+const ReactP5Wrapper = dynamic(
+  () => import("react-p5-wrapper").then((mod) => mod.ReactP5Wrapper),
+  { ssr: false }
+);
 
 const Sketch = (p5) => {
   let angle;
 
   p5.setup = () => {
-    p5.createCanvas(400, 360, "transparent");
+    p5.createCanvas(400, 360);
     angle = p5.PI / 4;
     p5.stroke(255);
   };
@@ -46,7 +47,7 @@ const FractalTree = () => {
     setIsClient(true);
   }, []);
 
-  if (!isClient) return null;
+  if (!isClient) return null; // Prevents rendering during SSR
 
   return (
     <div className="inset-0 w-full z-0">
