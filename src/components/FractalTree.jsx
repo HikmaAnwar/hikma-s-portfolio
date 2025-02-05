@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 
@@ -47,7 +45,7 @@ const FractalTree = () => {
     setIsClient(true);
   }, []);
 
-  if (!isClient) return null; // Prevents rendering during SSR
+  if (!isClient) return null;
 
   return (
     <div className="inset-0 w-full z-0">
