@@ -86,7 +86,7 @@ const NavBar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="px-4 py-2 md:hidden bg-navy text-colors-slate">
+        <div className="px-4 py-2 md:hidden bg-colors-navy text-colors-slate">
           <Link
             href="#intro"
             className="block py-2 hover:text-colors-greenBright"
@@ -116,7 +116,6 @@ const NavBar = () => {
             Projects
           </Link>
 
-          {/* Social Icons for Mobile */}
           <div className="flex mt-3 space-x-3">
             <Link
               href="mailto:hikmaanwar89@gmail.com"
