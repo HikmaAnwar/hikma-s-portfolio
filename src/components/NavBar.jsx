@@ -17,13 +17,13 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="fixed top-0 w-full bg-colors-navy text-colors-slate font-bold text-sm z-50 h-10 ">
-      <div className="container mx-auto px-4 py-2 flex justify-between items-center">
+    <nav className="fixed top-0 z-50 w-full h-10 text-sm font-bold bg-colors-navy text-colors-slate bg-colors-greenBright">
+      <div className="container flex items-center justify-between px-4 py-2 mx-auto">
         <Link href="#" className="text-lg">
           Hikma Anwar
         </Link>
 
-        <div className="hidden md:flex space-x-4">
+        <div className="hidden space-x-4 md:flex">
           <Link href="#intro" className="hover:text-colors-greenBright">
             Home
           </Link>
@@ -39,7 +39,7 @@ const NavBar = () => {
         </div>
 
         {/* Social Icons - Visible on all screens */}
-        <div className="hidden md:flex space-x-3 items-center">
+        <div className="items-center hidden space-x-3 md:flex">
           <Link
             href="mailto:hikmaanwar89@gmail.com"
             aria-label="Email"
@@ -74,12 +74,12 @@ const NavBar = () => {
         </div>
 
         {/* Hamburger Icon for Mobile */}
-        <div className="md:hidden flex items-center">
+        <div className="flex items-center md:hidden">
           <button onClick={toggleMenu} aria-label="Toggle menu">
             {isOpen ? (
-              <XIcon className="h-6 w-6 text-colors-lightestSlate" />
+              <XIcon className="w-6 h-6 text-colors-lightestSlate" />
             ) : (
-              <MenuIcon className="h-6 w-6 text-colors-lightestSlate" />
+              <MenuIcon className="w-6 h-6 text-colors-lightestSlate" />
             )}
           </button>
         </div>
@@ -87,7 +87,7 @@ const NavBar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-navy text-colors-slate px-4 py-2">
+        <div className="px-4 py-2 md:hidden bg-navy text-colors-slate">
           <Link
             href="#intro"
             className="block py-2 hover:text-colors-greenBright"
@@ -118,7 +118,7 @@ const NavBar = () => {
           </Link>
 
           {/* Social Icons for Mobile */}
-          <div className="flex space-x-3 mt-3">
+          <div className="flex mt-3 space-x-3">
             <Link
               href="mailto:hikmaanwar89@gmail.com"
               aria-label="Email"

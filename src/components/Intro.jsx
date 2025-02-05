@@ -19,7 +19,7 @@ const Intro = () => {
   }, [fullText]);
 
   return (
-    <div className="relative z-0 flex flex-col items-center max-w-5xl px-4 mx-auto text-center inset-1">
+    <div className="relative z-0 flex flex-col items-center max-w-5xl mx-auto text-center inset-1">
       <div>
         <FractalTree />
       </div>
@@ -50,7 +50,7 @@ const Intro = () => {
           in the tech industry.
         </p>
 
-        <button className="flex items-center justify-center px-6 py-2 mt-6 space-x-4 text-lg font-bold transition duration-300 border rounded-lg ml-52 border-colors-greenBright hover:bg-colors-greenBright">
+        <button className="flex items-center justify-center px-6 py-2 mx-auto mt-6 space-x-4 text-lg font-bold transition duration-300 border rounded-lg border-colors-greenBright hover:bg-colors-greenBright">
           <EmailRounded fontSize="small" />
           <span className="text-colors-black ">Say hi!</span>
         </button>
