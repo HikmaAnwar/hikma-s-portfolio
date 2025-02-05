@@ -1,21 +1,27 @@
 "use client";
 import React, { useState } from "react";
 import FadeInSection from "./FadeInSection";
+import Link from "next/link";
 
 const Credits = () => {
-  const [expanded] = useState(true); // expanded state, though not used here, retained in case needed
+  const [expanded] = useState(true);
 
   return (
     <FadeInSection>
-      <div
-        id="credits"
-        className="flex items-center pt-24" // equivalent to padding-top: 100px;
-      >
+      <div id="credits" className="flex items-center pt-24">
         <div
-          className="text-center w-full pb-10 text-slate-600 text-base" // equivalent to width: 100%, padding-bottom: 40px, color: var(--slate), and font-size: 16px;
-          style={{ fontFamily: '"NTR", sans-serif' }} // custom font family applied via inline style
+          className="w-full pb-10 text-base text-center text-white"
+          style={{ fontFamily: '"NTR", sans-serif' }}
         >
-          <div>Built and designed by Hikma Anwar.</div>
+          <div>
+            Built and designed by
+            <Link
+              href="https://hikmaanwar.com"
+              className="ml-2 hover:text-colors-greenBright"
+            >
+              Hikma Anwar.
+            </Link>
+          </div>
           <div>All rights reserved. ©</div>
         </div>
       </div>

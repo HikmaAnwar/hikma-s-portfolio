@@ -12,11 +12,11 @@ const Sketch = (p5) => {
   p5.setup = () => {
     p5.createCanvas(400, 360);
     angle = p5.PI / 4;
-    p5.stroke(0, 255, 225);
+    p5.stroke(225);
   };
 
   p5.draw = () => {
-    p5.background(255);
+    p5.background(10, 26, 60);
     p5.translate(200, p5.height);
     angle = p5.map(p5.sin(p5.frameCount * 0.01), -1, 1, p5.PI / 2, p5.PI / 16);
     drawBranch(100);

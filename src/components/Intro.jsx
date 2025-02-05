@@ -50,9 +50,9 @@ const Intro = () => {
           in the tech industry.
         </p>
 
-        <button className="flex items-center justify-center px-6 py-2 mx-auto mt-6 space-x-4 text-lg font-bold transition duration-300 border rounded-lg border-colors-greenBright hover:bg-colors-greenBright">
-          <EmailRounded fontSize="small" />
-          <span className="text-colors-black ">Say hi!</span>
+        <button className="flex items-center justify-center px-6 py-2 mx-auto mt-6 space-x-4 text-lg font-bold transition duration-300 border rounded-lg border-colors-greenBright hover:bg-black">
+          <EmailRounded fontSize="small" className="text-white" />
+          <span className="text-white">Say hi!</span>
         </button>
       </FadeInSection>
     </div>

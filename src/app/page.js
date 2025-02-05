@@ -10,12 +10,10 @@ import Credits from "../components/Credits";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center min-h-screen  p-8 sm:p-20 gap-16 font-[family-name:var(--font-geist-sans)]">
-      {/* Ensure NavBar stays fixed at the top */}
+    <div className="flex flex-col items-center min-h-screen  p-8 sm:p-20 gap-16 font-[family-name:var(--font-geist-sans)] bg-colors-navy">
       <NavBar />
 
-      {/* Page content with spacing between sections */}
-      <div className="flex flex-col items-center space-y-2 w-full max-w-screen-lg">
+      <div className="flex flex-col items-center w-full max-w-screen-lg space-y-2 ">
         <Intro />
         <About />
         <Experience />
