@@ -19,8 +19,8 @@ const Intro = () => {
   }, [fullText]);
 
   return (
-    <div className="relative z-0 flex flex-col items-center max-w-5xl mx-auto text-center inset-1">
-      <div>
+    <div className="z-0 flex flex-col items-center max-w-5xl mx-auto ml-0 text-center inset-1">
+      <div className="mx-auto">
         <FractalTree />
       </div>
       <div>
@@ -39,7 +39,7 @@ const Intro = () => {
       </div>
 
       <FadeInSection delay="0.5s">
-        <div className="mt-4 text-6xl font-light text-colors-slate md:text-3xl">
+        <div className="mt-4 text-6xl font-light text-center text-colors-slate md:text-3xl">
           Design. Build. Improve
         </div>
         <p className="max-w-xl mt-4 text-lg text-colors-slate md:text-xl ">

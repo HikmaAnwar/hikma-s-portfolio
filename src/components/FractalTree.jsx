@@ -10,7 +10,7 @@ const Sketch = (p5) => {
   let angle;
 
   p5.setup = () => {
-    p5.createCanvas(400, 360);
+    p5.createCanvas(360, 360);
     angle = p5.PI / 4;
     p5.stroke(225);
   };
@@ -49,7 +49,7 @@ const FractalTree = () => {
   if (!isClient) return null;
 
   return (
-    <div className="inset-0 z-0 w-full">
+    <div className="inset-0 z-0 w-full mx-auto ">
       <ReactP5Wrapper sketch={Sketch} />
     </div>
   );
