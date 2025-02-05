@@ -17,8 +17,8 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="fixed top-0 z-50 w-full h-10 text-sm font-bold text-white bg-colors-navy">
-      <div className="container flex items-center justify-between px-4 py-2 mx-auto">
+    <nav className="fixed top-0 z-50 w-full h-20 text-sm font-bold text-white border-b border-colors-navy bg-colors-navy">
+      <div className="container flex items-center justify-between px-4 py-4 mx-auto">
         <Link href="#" className="text-lg">
           Hikma Anwar
         </Link>

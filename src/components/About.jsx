@@ -15,7 +15,7 @@ const About = () => {
         href="http://www.aastu.edu.et/"
         target="_blank"
         rel="noopener noreferrer"
-        className=" text-colors-slate font-semibold hover:underline"
+        className="font-semibold text-colors-slate hover:underline"
       >
         {" "}
         Addis Ababa Science and Technology University.
@@ -47,21 +47,30 @@ const About = () => {
   return (
     <section id="about" className="py-16">
       <FadeInSection>
-        <div className="section-header mb-8">
-          <h2 className="section-title text-3xl font-semibold text-colors-slate">
+        <div className="mb-8 section-header">
+          <h2 className="text-3xl font-semibold section-title text-colors-slate">
             / about me
           </h2>
         </div>
 
-        <div className="flex flex-col md:flex-row items-center md:items-start">
-          <div className="about-description md:w-2/3 space-y-4 text-colors-slate">
+        <div className="flex flex-col items-center md:flex-row md:items-start">
+          <div className="items-center mx-auto my-8 about-image md:hidden">
+            <Image
+              alt="Hikma Anwar"
+              src="/assets/me.jpg"
+              width={250}
+              height={250}
+              className="rounded-lg shadow-lg"
+            />
+          </div>
+          <div className="space-y-4 about-description md:w-2/3 text-colors-slate">
             <div>{one}</div>
 
-            <p className="mt-4  text-colors-slate">
+            <p className="mt-4 text-colors-slate">
               Here are some technologies I have been working with:
             </p>
 
-            <ul className="grid grid-cols-2 gap-2 text-colors-greenBright list-disc list-inside pl-4">
+            <ul className="grid grid-cols-2 gap-2 pl-4 list-disc list-inside text-colors-greenBright">
               {tech_stack.map((tech_item, i) => (
                 <FadeInSection key={i} delay={`${i + 1}00ms`}>
                   <li className="hover:text-greenBright">{tech_item}</li>
@@ -72,7 +81,7 @@ const About = () => {
             <div>{two}</div>
           </div>
 
-          <div className="about-image mt-8 md:mt-0 md:ml-12">
+          <div className="hidden mt-8 sm:block md:mt-0 md:ml-12">
             <Image
               alt="Hikma Anwar"
               src="/assets/me.jpg"

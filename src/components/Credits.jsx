@@ -8,7 +8,7 @@ const Credits = () => {
 
   return (
     <FadeInSection>
-      <div id="credits" className="flex items-center pt-24">
+      <div id="credits" className="flex items-center pt-10">
         <div
           className="w-full pb-10 text-base text-center text-white"
           style={{ fontFamily: '"NTR", sans-serif' }}
