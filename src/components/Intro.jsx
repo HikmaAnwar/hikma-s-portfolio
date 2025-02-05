@@ -3,30 +3,29 @@ import React, { useEffect, useState } from "react";
 import { EmailRounded } from "@mui/icons-material";
 import FadeInSection from "./FadeInSection";
 import FractalTree from "./FractalTree";
-import Link from "next/link";
 
 const Intro = () => {
   const [text, setText] = useState("");
-  const fullText = "hi, hikma here."; // Text to be typed out
+  const fullText = "hi, hikma here.";
 
   useEffect(() => {
     let index = 0;
     const intervalId = setInterval(() => {
       setText(fullText.slice(0, index + 1));
       index++;
-      if (index === fullText.length) clearInterval(intervalId); // Stop when text is fully typed
-    }, 120); // Typing speed in milliseconds
-    return () => clearInterval(intervalId); // Cleanup on component unmount
+      if (index === fullText.length) clearInterval(intervalId);
+    }, 120);
+    return () => clearInterval(intervalId);
   }, [fullText]);
 
   return (
-    <div className="relative flex flex-col items-center text-center inset-1 z-0 mx-auto max-w-5xl px-4">
+    <div className="relative z-0 flex flex-col items-center max-w-5xl px-4 mx-auto text-center inset-1">
       <div>
         <FractalTree />
       </div>
       <div>
         {" "}
-        <h1 className="text-colors-slate  text-3xl md:text-2xl lg:text-7xl font-bold font-sans">
+        <h1 className="font-sans text-3xl font-bold text-colors-slate md:text-2xl lg:text-7xl">
           {text.split(" ").map((word, idx) => (
             <span key={idx}>
               {word === "hikma" ? (
@@ -40,10 +39,10 @@ const Intro = () => {
       </div>
 
       <FadeInSection delay="0.5s">
-        <div className="mt-4 text-colors-slate text-6xl md:text-3xl font-light">
+        <div className="mt-4 text-6xl font-light text-colors-slate md:text-3xl">
           Design. Build. Improve
         </div>
-        <p className="mt-4 text-colors-slate text-lg md:text-xl max-w-xl ">
+        <p className="max-w-xl mt-4 text-lg text-colors-slate md:text-xl ">
           I am a software engineer from Addis Ababa, Ethiopia. I&apos;m
           fascinated by large-scale, high-impact products and my passion for
           technology drives me to continually enhance my expertise. I look
@@ -51,9 +50,9 @@ const Intro = () => {
           in the tech industry.
         </p>
 
-        <button className="mt-6 ml-52 flex items-center justify-center space-x-4 border border-colors-greenBright px-6 py-2 rounded-lg text-lg font-bold hover:bg-colors-lightestNavy transition duration-300">
+        <button className="flex items-center justify-center px-6 py-2 mt-6 space-x-4 text-lg font-bold transition duration-300 border rounded-lg ml-52 border-colors-greenBright hover:bg-colors-greenBright">
           <EmailRounded fontSize="small" />
-          <span className="text-colors-greenBright">Say hi!</span>
+          <span className="text-colors-black ">Say hi!</span>
         </button>
       </FadeInSection>
     </div>

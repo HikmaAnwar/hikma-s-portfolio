@@ -7,7 +7,7 @@ const JobList = () => {
 
   const experienceItems = {
     "Dynamic Technologies": {
-      jobTitle: "Web Development Intern @",
+      jobTitle: "Web Development @",
       duration: "JUL 2024 - present",
       desc: [
         "Collaborated with cross-functional teams to develop and optimize innovative solutions for the Skillwave platform.",
@@ -30,8 +30,8 @@ const JobList = () => {
   };
 
   return (
-    <div className="flex flex-col sm:flex-row p-6">
-      <div className="sm:w-1/4 border-r border-gray-600 pr-4">
+    <div className="flex flex-col p-6 sm:flex-row">
+      <div className="pr-4 border-r border-gray-600 sm:w-1/4">
         {Object.keys(experienceItems).map((key, i) => (
           <button
             key={i}
@@ -42,11 +42,11 @@ const JobList = () => {
                 : "text-colors-slate"
             }`}
           >
-            {key}
+            &gt; {key}
           </button>
         ))}
       </div>
-      <div className="sm:w-3/4 pl-4 mt-4 sm:mt-0">
+      <div className="pl-4 mt-4 sm:w-3/4 sm:mt-0">
         {Object.keys(experienceItems).map((key, i) => (
           <div
             key={i}
@@ -55,10 +55,10 @@ const JobList = () => {
             <span className="block text-lg font-semibold text-colors-slate">
               {experienceItems[key].jobTitle} {key}
             </span>
-            <div className="text-sm text-gray-400 mb-4">
+            <div className="mb-4 text-sm text-gray-400">
               {experienceItems[key].duration}
             </div>
-            <ul className="list-disc list-inside text-colors-slate space-y-2">
+            <ul className="space-y-2 list-disc list-inside text-colors-slate">
               {experienceItems[key].desc.map((descItem, idx) => (
                 <FadeInSection key={idx} delay={`${idx + 1}00ms`}>
                   <li className="text-colors-slate">{descItem}</li>
