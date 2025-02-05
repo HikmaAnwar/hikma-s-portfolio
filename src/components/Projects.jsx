@@ -96,8 +96,8 @@ const Projects = () => {
 
   return (
     <div id="projects" className="max-w-screen-lg mx-auto pt-24 min-h-[50vh]">
-      <div className="section-header mb-8">
-        <span className="section-title text-3xl font-semibold text-colors-slate">
+      <div className="mb-8 section-header">
+        <span className="text-3xl font-semibold section-title text-colors-slate">
           / pet projects
         </span>
       </div>
@@ -105,12 +105,12 @@ const Projects = () => {
       <Carousel
         activeIndex={activeKey}
         onSelect={handleSelect}
-        className="max-w-screen-lg mx-auto pb-12"
+        className="max-w-screen-lg pb-12 mx-auto"
       >
         {Object.keys(spotlightProjects).map((key) => (
-          <Carousel.Item key={key} className="rounded-2xl shadow-lg">
+          <Carousel.Item key={key} className="shadow-lg rounded-2xl">
             <Image
-              className="  object-contain opacity-90"
+              className="object-contain opacity-90"
               src={spotlightProjects[key].image}
               alt={key}
               width={1000}
@@ -137,10 +137,10 @@ const Projects = () => {
         ))}
       </Carousel>
 
-      <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
         {Object.keys(projects).map((key, i) => (
           <FadeInSection delay={`${i + 1}00ms`} key={key}>
-            <div className="p-6 bg-gray-800 rounded-lg hover:shadow-md transition-transform transform hover:-translate-y-2">
+            <div className="p-6 transition-transform transform bg-gray-800 rounded-lg hover:shadow-md hover:-translate-y-2">
               <div className="flex items-center justify-between mb-4 text-colors-greenBright">
                 <FolderOpenRoundedIcon style={{ fontSize: 35 }} />
                 <ExternalLinks
@@ -148,11 +148,13 @@ const Projects = () => {
                   openLink={projects[key].open}
                 />
               </div>
-              <h4 className="text-xl font-bold text-colors-slate mb-2">
+              <h4 className="mb-2 text-xl font-bold text-colors-slate">
                 {key}
               </h4>
-              <p className="text-colors-slate mb-4">{projects[key].desc}</p>
-              <p className="text-sm text-colors-greenBright font-medium">
+              <p className="mb-4 text-colors-slate line-clamp-3">
+                {projects[key].desc}
+              </p>
+              <p className="text-sm font-medium text-colors-greenBright">
                 {projects[key].techStack}
               </p>
             </div>

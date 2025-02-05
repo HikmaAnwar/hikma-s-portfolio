@@ -17,14 +17,14 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="fixed top-0 z-50 w-full h-10 text-sm font-bold bg-colors-navy text-colors-slate bg-colors-greenBright">
+    <nav className="fixed top-0 z-50 w-full h-10 text-sm font-bold text-white bg-colors-navy">
       <div className="container flex items-center justify-between px-4 py-2 mx-auto">
         <Link href="#" className="text-lg">
           Hikma Anwar
         </Link>
 
-        <div className="hidden space-x-4 md:flex">
-          <Link href="#intro" className="hover:text-colors-greenBright">
+        <div className="hidden space-x-8 md:flex">
+          <Link href="#intro" className=" hover:text-colors-greenBright">
             Home
           </Link>
           <Link href="#about" className="hover:text-colors-greenBright">
@@ -38,8 +38,7 @@ const NavBar = () => {
           </Link>
         </div>
 
-        {/* Social Icons - Visible on all screens */}
-        <div className="items-center hidden space-x-3 md:flex">
+        <div className="items-center hidden space-x-7 md:flex">
           <Link
             href="mailto:hikmaanwar89@gmail.com"
             aria-label="Email"

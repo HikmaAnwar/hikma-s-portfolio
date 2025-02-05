@@ -49,7 +49,7 @@ const FractalTree = () => {
   if (!isClient) return null;
 
   return (
-    <div className="inset-0 z-0 w-full ">
+    <div className="inset-0 z-0 w-full">
       <ReactP5Wrapper sketch={Sketch} />
     </div>
   );
