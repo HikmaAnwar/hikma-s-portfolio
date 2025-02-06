@@ -19,7 +19,10 @@ const NavBar = () => {
   return (
     <nav className="fixed top-0 z-50 w-full h-20 text-sm font-bold text-colors-slate border-b border-colors-dark bg-colors-dark">
       <div className="container flex items-center justify-between px-4 py-4 mx-auto">
-        <Link href="#" className="text-lg">
+        <Link
+          href="#"
+          className="text-lg text-colors-slate hover:text-colors-greenBright"
+        >
           Hikma Anwar
         </Link>
 
@@ -30,13 +33,22 @@ const NavBar = () => {
           >
             Home
           </Link>
-          <Link href="#about" className="hover:text-colors-greenBright">
+          <Link
+            href="#about"
+            className="text-colors-slate hover:text-colors-greenBright"
+          >
             About
           </Link>
-          <Link href="#experience" className="hover:text-colors-greenBright">
+          <Link
+            href="#experience"
+            className="text-colors-slate hover:text-colors-greenBright"
+          >
             Experience
           </Link>
-          <Link href="#projects" className="hover:text-colors-greenBright">
+          <Link
+            href="#projects"
+            className=" text-colors-slate hover:text-colors-greenBright"
+          >
             Projects
           </Link>
         </div>
@@ -45,7 +57,7 @@ const NavBar = () => {
           <Link
             href="mailto:hikmaanwar89@gmail.com"
             aria-label="Email"
-            className="hover:text-greenBright"
+            className=" text-colors-slate hover:text-colors-greenBright"
           >
             <EmailRounded style={{ fontSize: 20 }} />
           </Link>
@@ -53,7 +65,7 @@ const NavBar = () => {
             href="https://github.com/HikmaAnwar"
             target="_blank"
             aria-label="GitHub"
-            className="hover:text-colors-greenBright"
+            className=" text-colors-slate hover:text-colors-greenBright"
           >
             <GitHub style={{ fontSize: 19 }} />
           </Link>
@@ -61,7 +73,7 @@ const NavBar = () => {
             href="https://www.linkedin.com/in/hikma-tsegaye/"
             target="_blank"
             aria-label="LinkedIn"
-            className="hover:text-colors-greenBright"
+            className="text-colors-slate hover:text-colors-greenBright"
           >
             <LinkedIn style={{ fontSize: 21 }} />
           </Link>
@@ -69,7 +81,7 @@ const NavBar = () => {
             href="https://medium.com/@hikmaanwar89"
             target="_blank"
             aria-label="Medium"
-            className="hover:text-colors-greenBright"
+            className=" text-colors-slate hover:text-colors-greenBright"
           >
             <BorderColor style={{ fontSize: 20 }} />
           </Link>
@@ -79,9 +91,9 @@ const NavBar = () => {
         <div className="flex items-center md:hidden">
           <button onClick={toggleMenu} aria-label="Toggle menu">
             {isOpen ? (
-              <XIcon className="w-6 h-6 text-colors-lightestSlate" />
+              <XIcon className="w-6 h-6 text-colors-lightestSlate hover:text-colors-greenBright" />
             ) : (
-              <MenuIcon className="w-6 h-6 text-colors-lightestSlate" />
+              <MenuIcon className="w-6 h-6 text-colors-lightestSlate hover:text-colors-greenBright" />
             )}
           </button>
         </div>
@@ -89,31 +101,31 @@ const NavBar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="px-4 py-2 md:hidden bg-colors-navy text-colors-slate">
+        <div className="px-4 py-2 md:hidden bg-colors-dark text-colors-slate">
           <Link
             href="#intro"
-            className="block py-2 hover:text-colors-greenBright"
+            className="block py-2 text-colors-slate hover:text-colors-greenBright"
             onClick={toggleMenu}
           >
             Home
           </Link>
           <Link
             href="#about"
-            className="block py-2 hover:text-colors-greenBright"
+            className="block py-2 text-colors-slate hover:text-colors-greenBright"
             onClick={toggleMenu}
           >
             About
           </Link>
           <Link
             href="#experience"
-            className="block py-2 hover:text-colors-greenBright"
+            className="block py-2 text-colors-slate hover:text-colors-greenBright"
             onClick={toggleMenu}
           >
             Experience
           </Link>
           <Link
             href="#projects"
-            className="block py-2 hover:text-colors-greenBright"
+            className="block py-2 text-colors-slate hover:text-colors-greenBright"
             onClick={toggleMenu}
           >
             Projects
@@ -123,7 +135,7 @@ const NavBar = () => {
             <Link
               href="mailto:hikmaanwar89@gmail.com"
               aria-label="Email"
-              className="hover:text-colors-greenBright"
+              className=" text-colors-slate hover:text-colors-greenBright"
             >
               <EmailRounded style={{ fontSize: 20 }} />
             </Link>
@@ -131,7 +143,7 @@ const NavBar = () => {
               href="https://github.com/HikmaAnwar"
               target="_blank"
               aria-label="GitHub"
-              className="hover:text-colors-greenBright"
+              className="text-colors-slate hover:text-colors-greenBright"
             >
               <GitHub style={{ fontSize: 19 }} />
             </Link>
@@ -139,7 +151,7 @@ const NavBar = () => {
               href="https://www.linkedin.com/in/hikma-tsegaye/"
               target="_blank"
               aria-label="LinkedIn"
-              className="hover:text-colors-greenBright"
+              className=" text-colors-slate hover:text-colors-greenBright"
             >
               <LinkedIn style={{ fontSize: 21 }} />
             </Link>
@@ -147,7 +159,7 @@ const NavBar = () => {
               href="https://medium.com/@hikmaanwar89"
               target="_blank"
               aria-label="Medium"
-              className="hover:text-colors-greenBright"
+              className="text-colors-slate hover:text-colors-greenBright"
             >
               <BorderColor style={{ fontSize: 20 }} />
             </Link>
