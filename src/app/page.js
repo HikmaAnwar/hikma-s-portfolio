@@ -13,7 +13,7 @@ export default function Home() {
     <div className="flex flex-col items-center min-h-screen  p-8 sm:p-20 gap-16 font-[family-name:var(--font-geist-sans)] bg-colors-dark">
       <NavBar />
 
-      <div className="flex flex-col items-center w-full max-w-screen-lg space-y-8 ">
+      <div className="flex flex-col items-center w-full max-w-screen-lg space-y-14 ">
         <Intro />
         <About />
         <Experience />
