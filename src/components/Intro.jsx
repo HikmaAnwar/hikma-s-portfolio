@@ -19,7 +19,7 @@ const Intro = () => {
   }, [fullText]);
 
   return (
-    <div className="z-0 flex flex-col items-center max-w-5xl mx-auto ml-0 text-center inset-1">
+    <div className="z-0 flex flex-col items-center max-w-5xl mx-auto ml-0 text-center inset-1 bg-colors-dark">
       <div className="mx-auto bg-colors-dark">
         <FractalTree />
       </div>
