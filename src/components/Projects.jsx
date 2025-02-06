@@ -95,8 +95,8 @@ const Projects = () => {
   };
 
   return (
-    <div id="projects" className="max-w-screen-lg mx-auto pt-24 min-h-[50vh]">
-      <div className="mb-8 section-header">
+    <div id="projects" className="max-w-screen-lg mx-auto pt-24 min-h-[50vh] ">
+      <div className="mb-8 section-header ">
         <span className="text-3xl font-semibold section-title text-colors-slate">
           / pet projects
         </span>
@@ -110,7 +110,7 @@ const Projects = () => {
         {Object.keys(spotlightProjects).map((key) => (
           <Carousel.Item key={key} className="shadow-lg rounded-2xl">
             <Image
-              className="object-contain opacity-90"
+              className="object-contain opacity-90 rounded-3xl"
               src={spotlightProjects[key].image}
               alt={key}
               width={1000}
