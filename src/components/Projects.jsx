@@ -36,7 +36,7 @@ const spotlightProjects = {
   lifekit: {
     title: "lifekit",
     desc: "Simple and conveys a comprehensive toolkit for managing different aspects of life.",
-    techStack: "next.js, mantine, supabase",
+    techStack: "next.js, mantine, supabase, zustand",
     link: "https://github.com/HikmaAnwar/LifeKit",
     open: "https://life-kit-gamma.vercel.app/",
     image: "/assets/lifekit.jpg",
@@ -69,7 +69,7 @@ const projects = {
   },
   lifekit: {
     desc: "Simple and conveys a comprehensive toolkit for managing different aspects of life.",
-    techStack: "next.js, mantine, supabase",
+    techStack: "next.js, mantine, supabase and zustand",
     link: "https://github.com/HikmaAnwar/LifeKit",
     open: "https://life-kit-gamma.vercel.app/",
   },
