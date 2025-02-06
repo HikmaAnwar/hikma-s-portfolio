@@ -29,25 +29,25 @@ const NavBar = () => {
         <div className="hidden space-x-8 md:flex">
           <Link
             href="#intro"
-            className="text-colors-slate hover:text-colors-greenBright"
+            className="text-colors-slate hover:text-colors-greenBright no-underline"
           >
             Home
           </Link>
           <Link
             href="#about"
-            className="text-colors-slate hover:text-colors-greenBright"
+            className="text-colors-slate hover:text-colors-greenBright no-underline"
           >
             About
           </Link>
           <Link
             href="#experience"
-            className="text-colors-slate hover:text-colors-greenBright"
+            className="text-colors-slate hover:text-colors-greenBright no-underline"
           >
             Experience
           </Link>
           <Link
             href="#projects"
-            className=" text-colors-slate hover:text-colors-greenBright"
+            className=" text-colors-slate hover:text-colors-greenBright no-underline"
           >
             Projects
           </Link>
