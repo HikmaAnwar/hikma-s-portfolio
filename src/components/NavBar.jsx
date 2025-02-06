@@ -21,7 +21,7 @@ const NavBar = () => {
       <div className="container flex items-center justify-between px-4 py-4 mx-auto">
         <Link
           href="#"
-          className="text-lg text-colors-slate hover:text-colors-greenBright"
+          className="text-lg text-colors-slate hover:text-colors-greenBright no-underline"
         >
           Hikma Anwar
         </Link>
