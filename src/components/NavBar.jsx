@@ -17,8 +17,8 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="fixed top-0 z-50 w-full h-20 text-sm font-bold text-colors-slate border-b border-colors-dark bg-colors-dark">
-      <div className="container flex items-center justify-between px-4 py-4 mx-auto">
+    <nav className="fixed top-0 z-50 w-full h-14 text-sm  font-bold text-colors-slate border-b border-colors-dark bg-colors-dark">
+      <div className="container flex items-center justify-between px-4 py-4  mx-auto">
         <Link
           href="#"
           className="text-lg text-colors-slate hover:text-colors-greenBright no-underline"
