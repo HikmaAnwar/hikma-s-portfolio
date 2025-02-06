@@ -20,7 +20,7 @@ const Intro = () => {
 
   return (
     <div className="z-0 flex flex-col items-center max-w-5xl mx-auto ml-0 text-center inset-1">
-      <div className="mx-auto">
+      <div className="mx-auto bg-colors-dark">
         <FractalTree />
       </div>
       <div>
