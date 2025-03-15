@@ -1,3 +1,4 @@
+// FractalTree.jsx
 import React, { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 
@@ -10,16 +11,18 @@ const Sketch = (p5) => {
   let angle;
 
   p5.setup = () => {
-    p5.createCanvas(360, 360);
+    // Create canvas with responsive size
+    const size = Math.min(window.innerWidth * 0.9, 500); // 90% of viewport width, max 500px
+    p5.createCanvas(size, size);
     angle = p5.PI / 4;
     p5.stroke(225);
   };
 
   p5.draw = () => {
     p5.background(10, 26, 60);
-    p5.translate(200, p5.height);
+    p5.translate(p5.width / 2, p5.height); // Center the tree
     angle = p5.map(p5.sin(p5.frameCount * 0.01), -1, 1, p5.PI / 2, p5.PI / 16);
-    drawBranch(100);
+    drawBranch(p5.width / 4); // Scale branch length with canvas size
   };
 
   function drawBranch(len) {
@@ -37,6 +40,12 @@ const Sketch = (p5) => {
       p5.pop();
     }
   }
+
+  // Handle window resize
+  p5.windowResized = () => {
+    const size = Math.min(window.innerWidth * 0.9, 500);
+    p5.resizeCanvas(size, size);
+  };
 };
 
 const FractalTree = () => {
@@ -49,7 +58,7 @@ const FractalTree = () => {
   if (!isClient) return null;
 
   return (
-    <div className="inset-0 z-0 w-full mx-auto ">
+    <div className="inset-0 z-0 w-full max-w-[500px] mx-auto -ml-4 sm:ml-0">
       <ReactP5Wrapper sketch={Sketch} />
     </div>
   );
