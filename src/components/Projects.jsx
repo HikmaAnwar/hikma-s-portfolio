@@ -7,6 +7,14 @@ import Carousel from "react-bootstrap/Carousel";
 import ExternalLinks from "./ExternalLinks";
 
 const spotlightProjects = {
+  "Feed sport": {
+    title: "Feed sport",
+    desc: "Feed Sports is a website that provides live scores, upcoming fixtures, and the latest sports news from your favorite teams.",
+    techStack: "Next.js, Tailwind CSS, APIs",
+    link: "https://github.com/HikmaAnwar/feedsport",
+    open: "https://feedsport.vercel.app/",
+    image: "/assets/sport.jpg",
+  },
   "Bopti fits": {
     title: "Bopti fits",
     desc: "Bopti Fits is a virtual wardrobe styling platform designed to offer personalized fashion recommendations and outfit planning services.",
