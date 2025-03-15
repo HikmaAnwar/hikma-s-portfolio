@@ -88,7 +88,7 @@ const projects = {
   },
   "color-guessing-game": {
     desc: "A simple color guessing game.",
-    techStack: "Reactnative,supabase and expo",
+    techStack: "Reactnative, supabase and expo",
     link: "https://github.com/HikmaAnwar/expo-app",
     open: "https://expo.dev/@hikmaanwar/color-guessing-game",
   },
