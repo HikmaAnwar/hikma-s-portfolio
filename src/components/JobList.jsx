@@ -8,7 +8,7 @@ const JobList = () => {
   const experienceItems = {
     "Dynamic Technologies": {
       jobTitle: "Web Development @",
-      duration: "JUL 2024 - present",
+      duration: "JUL 2024 - Jan 2025",
       desc: [
         "Collaborated with cross-functional teams to develop and optimize innovative solutions for the Skillwave platform.",
         "Developed and maintained Skillwave, an online learning platform offering programming, video editing, and design courses for university students.",
@@ -16,11 +16,20 @@ const JobList = () => {
         "Implemented Tailwind CSS to create a responsive, scalable, and customizable UI, enhancing the overall user experience.",
       ],
     },
+    MoCreatives: {
+      jobTitle: "Web Development Intern @",
+      duration: "Feb 2025 - present",
+      desc: [
+        "Collaborating with the development team to build and maintain websites for the company using next.js, mantine ui and typescript.",
+        "Optimizing website performance through image compression and code refactoring.",
+        "Api integration with the backend using node.js and express.",
+      ],
+    },
     Freelancer: {
       jobTitle: "Freelance Web Developer",
       duration: " Jun 2024 - Present",
       desc: [
-        "Developed and maintained websites for clients using react, next,js, mantine and typescript.",
+        "Develope and maintaines websites for clients using react, next,js, mantine and typescript.",
       ],
     },
   };

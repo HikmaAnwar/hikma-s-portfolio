@@ -46,7 +46,7 @@ const Intro = () => {
           </div>
 
           <p className="mt-4 text-base sm:text-lg md:text-xl text-colors-slate max-w-3xl mx-auto">
-            I am a software engineer from Addis Ababa, Ethiopia. I'm fascinated
+            I am a software engineer from Addis Ababa, Ethiopia. I am fascinated
             by large-scale, high-impact products and my passion for technology
             drives me to continually enhance my expertise. I look forward to
             contributing to impactful projects and making a difference in the
