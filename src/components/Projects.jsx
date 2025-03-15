@@ -32,15 +32,6 @@ const spotlightProjects = {
     image: "/assets/skillwave.jpg",
   },
 
-  Netview: {
-    title: "Netview",
-    desc: "Netview Movie Streaming is a platform that offers a wide range of movies and TV shows.",
-    techStack: "Javascript",
-    link: "https://github.com/HikmaAnwar/netview-movie-streaming",
-    open: "https://netview-movie-streaming.vercel.app/",
-    image: "/assets/netview.jpg",
-  },
-
   lifekit: {
     title: "lifekit",
     desc: "Simple and conveys a comprehensive toolkit for managing different aspects of life.",
@@ -61,12 +52,26 @@ const spotlightProjects = {
 };
 
 const projects = {
+  "Feed sport": {
+    desc: "Feed Sports is a website that provides live scores, upcoming fixtures, and the latest sports news from your favorite teams.",
+    techStack: "Next.js, Tailwind CSS, APIs",
+    link: "https://github.com/HikmaAnwar/feedsport",
+    open: "https://feedsport.vercel.app/",
+  },
+  lifekit: {
+    desc: "Simple and conveys a comprehensive toolkit for managing different aspects of life.",
+    techStack: "next.js, mantine, supabase and zustand",
+    link: "https://github.com/HikmaAnwar/LifeKit",
+    open: "https://life-kit-gamma.vercel.app/",
+  },
+
   "Bopti fits": {
     desc: "Bopti Fits is a virtual wardrobe styling platform designed to offer personalized fashion recommendations and outfit planning services.",
     techStack: "Next.js, Tailwind CSS",
     link: "https://github.com/HikmaAnwar/boptii-fitss",
     open: "https://boptii-fitss.vercel.app/",
   },
+
   Skillwave: {
     title: "skillwave",
     desc: "Skillwave is an educational platform that gives a courses like programming, Video editing and other design related courses based on institutions mainly for university students.",
@@ -75,12 +80,13 @@ const projects = {
     open: "https://skillwave-frontend.vercel.app/",
     image: "/assets/skillwave.jpg",
   },
-  lifekit: {
-    desc: "Simple and conveys a comprehensive toolkit for managing different aspects of life.",
-    techStack: "next.js, mantine, supabase and zustand",
-    link: "https://github.com/HikmaAnwar/LifeKit",
-    open: "https://life-kit-gamma.vercel.app/",
+  "minim-url": {
+    desc: "A simple and efficient link shortener.",
+    techStack: "Next.js, typescript",
+    link: "https://github.com/HikmaAnwar/minim-url",
+    open: "https://minim-url.vercel.app",
   },
+
   "minim-url": {
     desc: "A simple and efficient link shortener.",
     techStack: "Next.js, typescript",
