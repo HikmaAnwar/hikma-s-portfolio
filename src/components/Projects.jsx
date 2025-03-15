@@ -88,9 +88,10 @@ const projects = {
   },
   "color-guessing-game": {
     desc: "A simple color guessing game.",
-    techStack: "Reactnative",
+    techStack: "Reactnative,supabase and expo",
     link: "https://github.com/HikmaAnwar/expo-app",
     open: "https://expo.dev/@hikmaanwar/color-guessing-game",
+  },
 
   "minim-url": {
     desc: "A simple and efficient link shortener.",
@@ -98,13 +99,14 @@ const projects = {
     link: "https://github.com/HikmaAnwar/minim-url",
     open: "https://minim-url.vercel.app",
   },
+
   "Simple Design": {
     desc: "A simple design.",
     techStack: "React",
     link: "https://github.com/HikmaAnwar/simple-react-design",
     open: "https://simple-react-design-eight.vercel.app/",
   },
-}; },
+};
 
 const Projects = () => {
   const [activeKey, setActiveKey] = useState(0);
