@@ -21,7 +21,7 @@ const spotlightProjects = {
     techStack: "Next.js, Tailwind CSS",
     link: "https://github.com/HikmaAnwar/boptii-fitss",
     open: "https://boptii-fitss.vercel.app/",
-    image: "/assets/boptifits.jpg",
+    image: "/assets/bopti.jpg",
   },
   Skillwave: {
     title: "skillwave",
