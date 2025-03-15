@@ -86,10 +86,15 @@ const projects = {
     link: "https://github.com/HikmaAnwar/minim-url",
     open: "https://minim-url.vercel.app",
   },
+  "color-guessing-game": {
+    desc: "A simple color guessing game.",
+    techStack: "Reactnative",
+    link: "https://github.com/HikmaAnwar/expo-app",
+    open: "https://expo.dev/@hikmaanwar/color-guessing-game",
 
   "minim-url": {
     desc: "A simple and efficient link shortener.",
-    techStack: "Next.js, typescript",
+    techStack: "Next.js, typescript, supabase and API",
     link: "https://github.com/HikmaAnwar/minim-url",
     open: "https://minim-url.vercel.app",
   },
@@ -99,7 +104,7 @@ const projects = {
     link: "https://github.com/HikmaAnwar/simple-react-design",
     open: "https://simple-react-design-eight.vercel.app/",
   },
-};
+}; },
 
 const Projects = () => {
   const [activeKey, setActiveKey] = useState(0);
