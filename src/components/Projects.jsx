@@ -7,6 +7,24 @@ import Carousel from "react-bootstrap/Carousel";
 import ExternalLinks from "./ExternalLinks";
 
 const spotlightProjects = {
+  "Ensight-News": {
+    title: "Ensight News",
+    desc: "Ensight News is a news website that provides the latest news and articles on various topics.",
+    techStack: "Next.js, Tailwind CSS, APIs",
+    link: "https://github.com/HikmaAnwar/ensight-news",
+    open: "https://ensight-news.vercel.app/",
+    image: "/assets/ensight.jpg",
+  },
+
+  "Mo-creatives": {
+    title: "Mo-creatives",
+    desc: "Mo-creatives is a landing page for a creative agency that specializes in web design, branding, and digital marketing.",
+    techStack: "Next.js, Tailwind CSS",
+    link: "https://github.com/HikmaAnwar/mocreatives",
+    open: "https://mocreatives.vercel.app/",
+    image: "/assets/mocreatives.jpg",
+  },
+
   "Feed sport": {
     title: "Feed sport",
     desc: "Feed Sports is a website that provides live scores, upcoming fixtures, and the latest sports news from your favorite teams.",
@@ -52,6 +70,19 @@ const spotlightProjects = {
 };
 
 const projects = {
+  "Mo-creatives": {
+    desc: "Mo-creatives is a landing page for a creative agency that specializes in web design, branding, and digital marketing.",
+    techStack: "Next.js, Tailwind CSS",
+    link: "https://github.com/HikmaAnwar/mocreatives",
+    open: "https://mocreatives.vercel.app/",
+  },
+  "Ensight-News": {
+    desc: "Ensight News is a news website that provides the latest news and articles on various topics.",
+    techStack: "Next.js, Tailwind CSS,Typescript,Node.js, APIs",
+    link: "https://github.com/HikmaAnwar/ensight-news",
+    open: "https://ensight-news.vercel.app/",
+  },
+
   "Feed sport": {
     desc: "Feed Sports is a website that provides live scores, upcoming fixtures, and the latest sports news from your favorite teams.",
     techStack: "Next.js, Tailwind CSS, APIs",
