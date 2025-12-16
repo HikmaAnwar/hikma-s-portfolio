@@ -9,20 +9,20 @@ const About = () => {
 
   const one = (
     <p className=" text-colors-slate line-height">
-      I am a dedicated and passionate{" "}
-      <b>Web developer and a Software Engineering student</b> at
+      I am a {" "}
+      <b>Frontend developer and a Software Engineer </b> at
       <a
-        href="http://www.aastu.edu.et/"
+        href="https://matrix.et/"
         target="_blank"
         rel="noopener noreferrer"
         className="font-semibold text-colors-slate hover:underline"
       >
         {" "}
-        Addis Ababa Science and Technology University.
+        Matrix Technology PLC
       </a>
-      {""} and with my background in frontend web development, I bring a blend
+      {""} and with my background in frontend development, I bring a blend
       of technical skills and creativity to my projects. I am passionate about
-      web development and I am always looking for new opportunities to learn and
+      system development and I am always looking for new opportunities to learn and
       grow.
     </p>
   );
@@ -42,6 +42,9 @@ const About = () => {
     "Mantine",
     "Supabase",
     "Zustand",
+    "postgresql",
+    "Golang",
+
   ];
 
   return (
@@ -81,7 +84,7 @@ const About = () => {
             <div>{two}</div>
           </div>
 
-          <div className="hidden mt-8 sm:block md:mt-0 md:ml-12">
+          <div className="hidden md:block md:mt-0 md:ml-12">
             <Image
               alt="Hikma Anwar"
               src="/assets/me.jpg"

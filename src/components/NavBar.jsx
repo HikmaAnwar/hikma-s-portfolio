@@ -101,7 +101,7 @@ const NavBar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="px-4 py-2 md:hidden bg-colors-dark text-colors-slate">
+        <div className="absolute top-14 left-0 w-full px-4 py-2 md:hidden bg-colors-dark border-b border-colors-dark shadow-xl text-colors-slate">
           <Link
             href="#intro"
             className="block py-2 text-colors-slate hover:text-colors-greenBright"

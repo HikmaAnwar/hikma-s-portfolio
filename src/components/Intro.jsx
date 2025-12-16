@@ -11,16 +11,27 @@ const Intro = () => {
 
   useEffect(() => {
     let index = 0;
-    const intervalId = setInterval(() => {
-      setText(fullText.slice(0, index + 1));
-      index++;
-      if (index === fullText.length) clearInterval(intervalId);
-    }, 120);
-    return () => clearInterval(intervalId);
+    let intervalId;
+
+    const startTyping = () => {
+      intervalId = setInterval(() => {
+        setText(fullText.slice(0, index + 1));
+        index++;
+        if (index === fullText.length) clearInterval(intervalId);
+      }, 120);
+    };
+
+    // Delay start to allow the tree to appear first
+    const timeoutId = setTimeout(startTyping, 1500);
+
+    return () => {
+      clearInterval(intervalId);
+      clearTimeout(timeoutId);
+    };
   }, [fullText]);
 
   return (
-    <div className="z-0 flex flex-col items-center w-full min-h-screen px-4 py-8 mx-auto text-center bg-colors-dark">
+    <div className="z-0 flex flex-col items-center w-full min-h-screen px-4 pt-0 pb-8 mx-auto text-center bg-colors-dark">
       <div className="w-full max-w-5xl mx-auto">
         <div className="w-full mx-auto bg-colors-dark">
           <FractalTree />

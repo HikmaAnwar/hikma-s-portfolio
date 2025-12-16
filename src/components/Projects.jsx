@@ -170,11 +170,11 @@ const Projects = () => {
             />
             <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-2xl">
               <Carousel.Caption className="text-center text-colors-slate">
-                <h3 className="text-3xl font-bold">
+                <h3 className="text-xl md:text-3xl font-bold">
                   {spotlightProjects[key].title}
                 </h3>
-                <p className="text-lg">{spotlightProjects[key].desc}</p>
-                <p className="text-sm font-bold text-colors-greenBright">
+                <p className="text-sm md:text-lg">{spotlightProjects[key].desc}</p>
+                <p className="text-xs md:text-sm font-bold text-colors-greenBright">
                   {spotlightProjects[key].techStack}
                 </p>
                 <div className="flex justify-center mt-4 ">

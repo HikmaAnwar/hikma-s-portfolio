@@ -19,7 +19,7 @@ const Sketch = (p5) => {
   };
 
   p5.draw = () => {
-    p5.background(10, 26, 60);
+    p5.background(9, 18, 47);
     p5.translate(p5.width / 2, p5.height); // Center the tree
     angle = p5.map(p5.sin(p5.frameCount * 0.01), -1, 1, p5.PI / 2, p5.PI / 16);
     drawBranch(p5.width / 4); // Scale branch length with canvas size
@@ -58,7 +58,7 @@ const FractalTree = () => {
   if (!isClient) return null;
 
   return (
-    <div className="inset-0 z-0 w-full max-w-[500px] mx-auto -ml-4 sm:ml-0">
+    <div className="inset-0 z-0 w-full max-w-[500px] mx-auto -ml-20 sm:ml-0">
       <ReactP5Wrapper sketch={Sketch} />
     </div>
   );
